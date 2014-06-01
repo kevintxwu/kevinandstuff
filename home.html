@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <title> Kevin & Stuff </title>
+  <style>
+  body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 36px;
+    color: #333333;
+  }
+
+  h1 {
+    margin: 0px;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 36px;
+    color: #4D4D4D;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .container {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    padding: 100px;
+  }
+
+  .content {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .orange-bg {
+    background: #f79441;
+  }
+
+  .icon {
+    height: 150px;
+  }
+
+  #work-button {
+    background: #FFD261;
+    border-radius: 10px;
+    margin-top: 24px;
+    padding: 10px;
+    border: #FFD261 5px solid;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  #work-button:hover {
+    cursor: pointer;
+    border: #fff 5px solid;
+  }
+  </style>
+</head>
+<body>
+  <div class="container orange-bg">
+    <div class="content">
+      <img class="icon" src="me.svg"/>
+      <h1 class="white"> Hey! <br/> I'm Kevin. </h1>
+      <h2 class="white"> I'm a designer, and coder, and stuff. </h2>
+      <button id="work-button" onclick="f()"> VIEW PORTFOLIO </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <h1> About Me </h1>
+      <p> I like making awesome stuff! For now, I'm also studying EECS at University of California, Berkeley and working for a nonprofit  called Blueprint. My current strengths are UI/UX, Web Frameworks, Responsive Design, and Graphic Illustration. </p>
+    </div>
+  </div>
+</body>
+<script>
+function f() { 
+  alert("Sorry! My portfolio is unavailable right now! It's probably being updated :P."); 
+}
+</script>
+</html>
