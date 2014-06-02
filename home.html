@@ -87,9 +87,17 @@
   }
 
   .icon-wrapper {
-    top: 15px;
+    top: 20px;
     margin-top: 0px;
-    padding: 15px;
+    margin: 20px;
+  }
+
+  #left-icon {
+    margin-left: 0px;
+  }
+
+  #right-icon {
+    margin-right: 0px;
   }
 
   .tooltip{
@@ -100,7 +108,7 @@
   .tooltip:after {
     background: #514A46;
     border-radius: 5px;
-    bottom: 156px;
+    bottom: 136px;
     color: #fff;
     content: attr(name);
     left: 60%;
@@ -116,7 +124,7 @@
     border: solid;
     border-color: #514A46 transparent;
     border-width: 7px 7px 0 7px;
-    bottom: 150px;
+    bottom: 130px;
     content: "";
     left: 70%;
     position: absolute;
@@ -155,39 +163,39 @@
 
   @-webkit-keyframes dropDownDelayed {
     0% {
-      bottom: 156px;
+      bottom: 136px;
       opacity: 0;
     }
 
     69% {
-      bottom: 156px;
+      bottom: 136px;
       opacity: 0;
     }
 
     100% {
-      bottom: 150px;
+      bottom: 130px;
       opacity: 1;
     }
   }
 
   @keyframes dropDownDelayed {
     0% {
-      bottom: 156px;
+      bottom: 136px;
       opacity: 0;
     }
 
     69% {
-      bottom: 156px;
+      bottom: 136px;
       opacity: 0;
     }
 
     100% {
-      bottom: 150px;
+      bottom: 130px;
       opacity: 1;
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 800px) {
     h1 {
       font-size: 48px;
     }
@@ -200,11 +208,8 @@
     #work-button {
       font-size: 24px;
     }
-    .icon {
+    #about {
       display: none;
-    }
-    #main-icon {
-      display: inline;
     }
   }
 
@@ -221,11 +226,8 @@
     #work-button {
       font-size: 18px;
     }
-    .icon {
+    #about {
       display: none;
-    }
-    #main-icon {
-      display: inline;
     }
   }
   </style>
@@ -233,25 +235,25 @@
 <body>
   <div class="container orange-bg">
     <div class="content">
-      <img class="icon animated bounceIn" id="main-icon" src="me.svg"/>
+      <img class="icon animated bounceIn" src="me.svg"/>
       <h1 class="white"> Hey! <br/> I'm Kevin. </h1>
       <h2 class="white hide" id="one"> I'm a designer, and coder, and stuff. </h2>
       <h2 class="white hide" id="two"> I'm a full stack developer and stuff. </h2>
-      <h2 class="white hide" id="three"> I'm an engineer, and hacker, and stuff. </h2>
+      <h2 class="white hide" id="three"> I'm an artist, and hacker, and stuff. </h2>
       <button id="work-button" onclick="f()"> VIEW PORTFOLIO </button>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="about">
     <div class="content">
       <h1> About Me </h1>
       <p> I like making awesome stuff! For now, I'm also studying EECS at University of California, Berkeley and working for a nonprofit  called Blueprint. My current strengths are UI/UX, Web Frameworks, Responsive Design, and Graphic Illustration. </p>
-      <div class="tooltip icon-wrapper" name="Illustrator">
+      <div class="tooltip icon-wrapper" id="left-icon" name="Illustrator">
         <img class="icon" src="pen.svg"/>
       </div>
       <div class="tooltip icon-wrapper" name="Designer">
         <img class="icon" src="ui.svg"/>
       </div>
-      <div class="tooltip icon-wrapper" name="Coder">
+      <div class="tooltip icon-wrapper" id="right-icon" name="Coder">
         <img class="icon" src="gears.svg"/>
       </div>
     </div>
