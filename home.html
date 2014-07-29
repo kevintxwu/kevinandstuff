@@ -50,10 +50,6 @@
     -webkit-transition: 1s;
   }
 
-  #email-link:hover {
-    color: #ffd261;
-  }
-
   .white {
     color: #fff;
   }
@@ -447,7 +443,8 @@
       <a id="email-link" href="mailto:kevintxwu@gmail.com" onmouseover="brighten()" onmouseout="darken()"> kevintxwu@gmail.com </a>
     </div>
     <div class="creature">
-      <div class="click-anim">    
+      <div class="click-anim">
+        <a href="mailto:kevintxwu@gmail.com" onmouseover="brighten()" onmouseout="darken()">   
         <figure>
           <div class="face">
             <div class="eyebrows">
@@ -459,6 +456,7 @@
             <div class="mouth"></div>
           </div>
         </figure>
+        </a>
       </div>
       <div class="shadow"></div>
     </div>
@@ -491,6 +489,7 @@ function brighten() {
   $('.shadow').css("background", "rgba(0,0,0,.2)");
   $('.mouth').css("transform", "rotate(180deg)");
   $('.mouth').css("margin-top", "-2px");
+  $('#email-link').css("color", "#ffd261");
 }
 
 function darken() {
@@ -501,6 +500,7 @@ function darken() {
   $('.shadow').css("background", "rgba(0,0,0,.1)");
   $('.mouth').css("transform", "rotate(0deg)");
   $('.mouth').css("margin-top", "5px");
+  $('#email-link').css("color", "#22becc");
 }
 </script>
 </html>
