@@ -39,12 +39,21 @@
     color: #4D4D4D;
   }
 
+  #preloader {
+    position: fixed;
+    top: -999px;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    background: url('mail.svg');
+  }
+
   #email-link {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 36px;
-    color: #22becc;
+    color: #fff;
     text-decoration: none;
     transition: 1s;
     -webkit-transition: 1s;
@@ -100,6 +109,31 @@
 
   .icon {
     height: 150px;
+  }
+
+  .clickable:hover {
+    cursor: pointer;
+  }
+
+  #home-icon:hover {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+
+  #mail-icon {
+    margin: auto;
+    margin-top: 36px;
+    height: 150px;
+    width: 150px;
+    background-image: url('pre-mail.svg');
+    background-size: cover;
+  }
+
+  #mail-icon:hover {
+    background: url('mail.svg');
+    background-size: cover;
   }
 
   #work-button {
@@ -232,134 +266,6 @@
     }
   }
 
-  .creature {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    width: 260px;
-    margin: 0 auto;
-    padding: 15px 30px;
-    user-select: none;
-  }
-
-  figure {
-    background-color: #22becc;
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    padding: 40px;
-    box-shadow: inset -10px -30px rgba(0,0,0,.1);
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 50%;
-    animation: bobble 5s ease-in-out infinite;
-    -webkit-animation: bobble 5s ease-in-out infinite;
-    transform-origin: center bottom;
-    -webkit-transform-origin: center bottom;
-    transition: 1s;
-    -webkit-transition: 1s;
-    text-align: center;
-  }
-
-  @keyframes bobble {
-    33%{ transform: rotate(5deg); }
-    66%{ transform: rotate(-5deg); }
-  } 
-
-  @-webkit-keyframes bobble {
-    33%{ -webkit-transform: rotate(5deg); }
-    66%{ -webkit-transform: rotate(-5deg); }
-  } 
-
-  .shadow {
-    height: 20px;
-    background: rgba(0,0,0,.1);
-    width: 60%;
-    border-radius: 100%;
-    margin: -20px 0 0 30%;
-    transition: 1s;
-    -webkit-transition: 1s;
-  }
-
-  .face {
-    position: relative;
-    left: -35px;
-    top: 10px;
-    transform: rotate(25deg);
-    -webkit-transform: rotate(25deg);
-  }
-
-  .eyebrows {
-    position: relative;
-    margin-bottom: 0;
-  }
-
-  .eyebrow {
-    display: inline-block;
-    width: 10px;
-    height: 6px;
-    margin: 0 5px 0;
-    border-radius: 2px;
-    background: #333;
-    animation: blink-brow 4s ease-in-out infinite;
-    -webkit-animation: blink-brow 4s ease-in-out infinite;
-    transition: 1s;
-    -webkit-transition: 1s;
-  }
-
-  @keyframes blink-brow { 90% { margin: 0 5px 0px; } 95% { margin: 0 5px -5px; } }
-
-  @-webkit-keyframes blink-brow { 90% { margin: 0 5px 0px; } 95% { margin: 0 5px -5px; } }
-
-  .left {
-    transform: rotate(-25deg);
-    -webkit-transform: rotate(-25deg);
-  }
-
-  .right {
-    transform: rotate(25deg);
-    -webkit-transform: rotate(25deg);
-  }
-
-  .eye {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin: 0 4px 0px;
-    background: #333;
-    border-radius: 10px;
-    border-radius: 50%;
-    animation: blink 4s ease-in-out infinite;
-    -webkit-animation: blink 4s ease-in-out infinite;
-  }
-
-  @keyframes blink { 90% { transform: none; } 95% { transform: rotateX(90deg); } }
-  @-webkit-keyframes blink { 90% { -webkit-transform: none; } 95% { transform: rotateX(90deg); } }
-    
-  .mouth {
-    display: block;
-    width: 20px;
-    height: 10px;
-    border-top: 2px solid #333;
-    border-radius: 100px 100px 0px 0px;
-    margin: 5px auto;
-    -webkit-animation: mouth 4s infinite;
-    -moz-animation: mouth 4s infinite;
-    -ms-animation: mouth 4s infinite;
-    -o-animation: mouth 4s infinite;
-    animation: mouth 4s infinite;
-  }
-
-  keyframes mouth {
-    0%, 20%, 76%, 100% { border-top: 8px solid #333; width: 15px; }
-    10%, 50%, 95% { border-top: 5px solid #333; width: 25px; }
-  }
-
-  @-webkit-keyframes mouth {
-    0%, 20%, 76%, 100% { border-top: 8px solid #333; width: 15px; }
-    10%, 50%, 95% { border-top: 5px solid #333; width: 25px; }
-  }
-
   @media (max-width: 800px) {
     h1 { font-size: 48px; }
     .orange-bg { min-height: 100%; }
@@ -390,9 +296,10 @@
   </style>
 </head>
 <body>
+  <div id="preloader"></div>
   <div class="container orange-bg">
     <div class="content">
-      <img class="icon animated bounceIn" src="me.svg"/>
+      <img id="home-icon" class="icon animated bounceIn clickable" src="me.svg" onclick="scrollTo('#about')"/>
       <h1 class="white"> Hey! <br/> I'm Kevin. </h1>
       <h2 class="white hide" id="one"> I'm a designer, and coder, and stuff. </h2>
       <h2 class="white hide" id="two"> I'm a full stack developer and stuff. </h2>
@@ -400,7 +307,7 @@
       <button id="work-button" onclick="scrollTo('#portfolio')"> VIEW PORTFOLIO </button>
     </div>
   </div>
-  <div class="container">
+  <div id="about" class="container">
     <div class="content">
       <h1> About Me </h1>
       <p> I like making awesome stuff! For now, I'm also studying EECS at University of California, Berkeley and working for a nonprofit  called Blueprint. My current strengths are UI/UX, Web Frameworks, Responsive Design, and Graphic Illustration. </p>
@@ -440,27 +347,10 @@
     <div class="content">
       <h1 class="white"> Get In Touch! </h1>
       <p class="white thinner"> Feel free to contact me with any projects or opportunities at: </p>
-      <a id="email-link" href="mailto:kevintxwu@gmail.com" onmouseover="brighten()" onmouseout="darken()"> kevintxwu@gmail.com </a>
+      <a id="email-link" href="mailto:kevintxwu@gmail.com"> kevintxwu@gmail.com </a>
+      <br/>
+      <a href="mailto:kevintxwu@gmail.com"><div id="mail-icon" class="icon"></div></a>
     </div>
-    <div class="creature">
-      <div class="click-anim">
-        <a href="mailto:kevintxwu@gmail.com" onmouseover="brighten()" onmouseout="darken()">   
-        <figure>
-          <div class="face">
-            <div class="eyebrows">
-              <div class="eyebrow left"></div>
-              <div class="eyebrow right"></div>
-            </div>
-            <div class="eye"></div>
-            <div class="eye"></div>
-            <div class="mouth"></div>
-          </div>
-        </figure>
-        </a>
-      </div>
-      <div class="shadow"></div>
-    </div>
-  </div>
   </div>
 </body>
 <script>
@@ -476,31 +366,10 @@ $(document).ready(function() {
   } else {
     $("#three").show();
   }
+  $('#home-icon').hover(function(){$(this).removeClass('bounceIn')});
   $('.flexslider').flexslider({
     animation: "slide",
   });
 });
-
-function brighten() {
-  $('.left').css("transform", "rotate(-10deg)");
-  $('.right').css("transform", "rotate(10deg)");
-  $('.eyebrow').css("border-radius", "4px 4px 2px 2px");
-  $('figure').css("background-color", "#ffd261");
-  $('.shadow').css("background", "rgba(0,0,0,.2)");
-  $('.mouth').css("transform", "rotate(180deg)");
-  $('.mouth').css("margin-top", "-2px");
-  $('#email-link').css("color", "#ffd261");
-}
-
-function darken() {
-  $('.left').css("transform", "rotate(-25deg)");
-  $('.right').css("transform", "rotate(25deg)");
-  $('.eyebrow').css("border-radius", "2px");
-  $('figure').css("background-color", "#22becc");
-  $('.shadow').css("background", "rgba(0,0,0,.1)");
-  $('.mouth').css("transform", "rotate(0deg)");
-  $('.mouth').css("margin-top", "5px");
-  $('#email-link').css("color", "#22becc");
-}
 </script>
 </html>
