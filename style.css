@@ -4,6 +4,7 @@ body, html {
   height: 100%;
   font-family: 'Lora', serif;
   color: black;
+  min-width: 1100px;
 }
 
 p, h1, h2, h3, h4 {
@@ -53,7 +54,6 @@ p, h1, h2, h3, h4 {
 .content {
   margin: 100px auto 100px auto;
   width: 1000px;
-  min-width: 1000px;
   padding: 0 50px 0 50px;
 }
 
@@ -68,7 +68,6 @@ p, h1, h2, h3, h4 {
 #header-adjust {
   margin-top: 150px;
   width: 600px;
-  min-width: 600px;
   padding-right: 450px;
 }
 
