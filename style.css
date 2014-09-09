@@ -1,0 +1,224 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Lora', serif;
+  color: black;
+}
+
+p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#circle {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+#inner-circle {
+  position: fixed;
+  top: 60px;
+  left: 60px;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+#circle:hover {
+  cursor: pointer;
+}
+
+#circle:hover ~ #inner-circle {
+  opacity: 1;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.content {
+  margin: 100px auto 100px auto;
+  width: 1000px;
+  min-width: 1000px;
+  padding: 0 50px 0 50px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.padding-bottom {
+  padding-bottom: 100px;
+}
+
+#header-adjust {
+  margin-top: 150px;
+  width: 600px;
+  min-width: 600px;
+  padding-right: 450px;
+}
+
+#title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px;
+}
+
+#subtitle {
+  font-style: italic;
+  font-size: 48px;
+}
+
+.divider {
+  margin: 50px 0 50px 0;
+  height: 5px;
+  width: 100px;
+  background: black;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  float: left;
+  width: 600px;
+  padding: 50px 400px 50px 0;
+  font-size: 18px;
+  line-height: 36px
+}
+
+.work {
+  margin-top: 100px;
+  overflow: auto;
+}
+
+.cancel-margin {
+  margin: 0;
+}
+
+.work-title {
+  float: left;
+  width: 310px;
+}
+
+.work-link {
+  float: left;
+  position: relative;
+  width: 690px;
+}
+
+.work-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: url(view.svg);
+  background-size: 690px 690px;
+  background-position: center;
+  transition: 0.25s;
+  webkit-transition: 0.25s;
+}
+
+.progress {
+  background: url(progress.svg);
+  background-size: 690px 690px;
+  background-position: center;
+}
+
+.work-color:hover {
+  opacity: 0.5;
+}
+
+.work-image {
+  float: left;
+  width: 100%;
+}
+
+.big {
+  float: left;
+  width: 1000px;
+}
+
+.medium {
+  float: left;
+  width: 600px;
+}
+
+.small {
+  float: left;
+  width: 500px;
+}
+
+.footer-link-wrapper {
+  float: left;
+  margin: 50px 0 100px 0;
+  width: 70px;
+  height: 70px;
+}
+
+.footer-link {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.footer-link-inner {
+  position: relative;
+  top: -50px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+.footer-link:hover {
+  cursor: pointer;
+}
+
+.footer-link:hover + .footer-link-inner {
+  opacity: 1;
+}
+
+.footer-text {
+  float: left;
+  margin: 50px 0 100px 0;
+  width: 430px;
+}

@@ -1,377 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'/>
-  <link rel="stylesheet" href="animate.css"/>
-  <link rel="stylesheet" href="flexslider.css"/>
-  <link rel="icon" type="image/png" href="me.png"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="jquery.flexslider-min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no"/>
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="k.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   <title> Kevin & Stuff </title>
-  <style>
-  body, html {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    color: #333;
-  }
-
-  h1 {
-    margin: 0px;
-    font-size: 60px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-  }
-
-  h2 {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    line-height: 36px;
-  }
-
-  p {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 36px;
-    color: #4D4D4D;
-  }
-
-  #preloader {
-    position: fixed;
-    top: -999px;
-    left: -999px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    background: url('mail.svg');
-  }
-
-  #email-link {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    line-height: 36px;
-    color: #fff;
-    text-decoration: none;
-    transition: 1s;
-    -webkit-transition: 1s;
-  }
-
-  .white {
-    color: #fff;
-  }
-
-  .thinner {
-    font-weight: 300;
-  }
-
-  .no-padding {
-    padding: 0px !important;
-  }
-
-  .no-bottom-padding {
-    padding-bottom: 0px !important;
-  }
-
-  .small-bottom {
-    padding-bottom: 50px !important;
-  }
-
-  .container {
-    box-sizing: border-box;
-    float: left;
-    width: 100%;
-    text-align: center;
-    background: #fff;
-    padding: 100px;
-    overflow-x: hidden;
-  }
-
-  .content {
-    margin: auto;
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .orange-bg {
-    background: #f79441;
-  }
-
-  .teal-bg {
-    background: #59c0a7;
-  }
-
-  .black-bg {
-    background: #333;
-  }
-
-  .icon {
-    width: 150px;
-    height: 150px;
-  }
-
-  .clickable:hover {
-    cursor: pointer;
-  }
-
-  #home-icon:hover {
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-  }
-
-  #mail-icon {
-    display: block;
-    margin: auto;
-    margin-top: 36px;
-    height: 150px;
-    width: 150px;
-    background-image: url('pre-mail.svg');
-    background-size: cover;
-  }
-
-  #mail-icon:hover {
-    background: url('mail.svg');
-    background-size: cover;
-  }
-
-  #work-button {
-    background: #FFD261;
-    border-radius: 10px;
-    margin-top: 24px;
-    padding: 10px;
-    border: #FFD261 5px solid;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    outline: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-
-  #work-button:hover {
-    cursor: pointer;
-    border: #fff 5px solid;
-  }
-
-  .icon-wrapper {
-    top: 20px;
-    margin-top: 0px;
-    margin: 20px;
-  }
-
-  #left-icon {
-    margin-left: 0px;
-  }
-
-  #right-icon {
-    margin-right: 0px;
-  }
-
-  .tooltip{
-    display: inline;
-    position: relative;
-  }
-
-  .tooltip:after {
-    background: #514A46;
-    border-radius: 5px;
-    bottom: 136px;
-    color: #fff;
-    content: attr(name);
-    left: 60%;
-    padding: 15px;
-    position: absolute;
-    z-index: 98;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-  }
-
-  .tooltip:before {
-    border: solid;
-    border-color: #514A46 transparent;
-    border-width: 7px 7px 0 7px;
-    bottom: 130px;
-    content: "";
-    left: 70%;
-    position: absolute;
-    z-index: 99;
-  }
-
-  .tooltip:before{
-    opacity: 0;
-  } 
-
-  .tooltip:after {
-    opacity: 0;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-  }
-
-  .tooltip:hover:after {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-name: flipInX;
-    animation-name: flipInX;
-    opacity: 1;
-  }
-
-  .tooltip:hover:before {
-    -webkit-animation-duration: 0.69s;
-    animation-duration: 0.69s;
-    -webkit-animation-name: dropDownDelayed;
-    animation-name: dropDownDelayed;
-    opacity: 1;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  @-webkit-keyframes dropDownDelayed {
-    0% {
-      bottom: 136px;
-      opacity: 0;
-    }
-
-    69% {
-      bottom: 136px;
-      opacity: 0;
-    }
-
-    100% {
-      bottom: 130px;
-      opacity: 1;
-    }
-  }
-
-  @keyframes dropDownDelayed {
-    0% {
-      bottom: 136px;
-      opacity: 0;
-    }
-
-    69% {
-      bottom: 136px;
-      opacity: 0;
-    }
-
-    100% {
-      bottom: 130px;
-      opacity: 1;
-    }
-  }
-
-  @media (max-width: 800px) {
-    h1 { font-size: 48px; }
-    .orange-bg { min-height: 100%; }
-    #work-button { font-size: 24px; }
-    .icon-wrapper {
-      float: left;
-      text-align: center;
-      min-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    .tooltip:after { left: 50%; }
-    .tooltip:before { left: 60%; }
-    .flexslider:hover .flex-prev { left: 10%; }
-    .flexslider:hover .flex-next { right: 10%; }
-    .flexslider img {
-      margin-left: 50%;
-      width: 200% !important;
-    }
-  }
-
-  @media (max-width: 450px) {
-    h1 { font-size: 36px; }
-    #work-button { font-size: 18px; }
-    .tooltip:after { left: 60%; }
-    .tooltip:before { left: 70%; }
-  }
-  </style>
 </head>
 <body>
-  <div id="preloader"></div>
-  <div class="container orange-bg">
-    <div class="content">
-      <img id="home-icon" class="icon animated bounceIn clickable" src="me.svg" onclick="scrollTo('#about')"/>
-      <h1 class="white"> Hey! <br/> I'm Kevin. </h1>
-      <h2 class="white hide" id="one"> I'm a designer, and coder, and stuff. </h2>
-      <h2 class="white hide" id="two"> I'm a full stack developer and stuff. </h2>
-      <h2 class="white hide" id="three"> I'm an artist, and hacker, and stuff. </h2>
-      <button id="work-button" onclick="scrollTo('#portfolio')"> VIEW PORTFOLIO </button>
+  <div id="circle"></div>
+  <div id="inner-circle"></div>
+  <div class="wrapper border-bottom">
+    <div id="header-adjust" class="content">
+      <div id="title">Hi! I'm Kevin.</div>
+      <div id="subtitle">This is my site.</div>
+      <div class="divider"></div>
+      <h2>I'm a UC Berkeley student.<br>I like design, code, and startups.</h2>
     </div>
   </div>
-  <div id="about" class="container">
+  <div class="wrapper">
     <div class="content">
-      <h1> About Me </h1>
-      <p> I like making awesome stuff! For now, I'm also studying EECS at University of California, Berkeley and working for a nonprofit  called Blueprint. My current strengths are UI/UX, Web Frameworks, Responsive Design, and Graphic Illustration. </p>
-      <div class="tooltip icon-wrapper" id="left-icon" name="Illustrator">
-        <img class="icon" src="pen.svg"/>
+      <div class="work cancel-margin">
+        <div class="work-title">
+          <h1>The Resistance</h1>
+          <h2>Mobile + UI</h2>
+          <h3>IN PROGRESS</h3>
+        </div>
+        <a class="work-link">
+          <div class="work-color progress"></div>
+          <img class="work-image" src="the-resistance.jpg">
+        </a>
       </div>
-      <div class="tooltip icon-wrapper" name="Designer">
-        <img class="icon" src="ui.svg"/>
+      <div class="work">
+        <div class="work-title">
+          <h1>Outgame</h1>
+          <h2>Business + Web + UI</h2>
+          <h3>AUGUST 2014</h3>
+        </div>
+        <a class="work-link" href="outgame.html">
+          <div class="work-color"></div>
+          <img class="work-image" src="outgame.jpg">
+        </a>
       </div>
-      <div class="tooltip icon-wrapper" id="right-icon" name="Coder">
-        <img class="icon" src="gears.svg"/>
+      <div class="work">
+        <div class="work-title">
+          <h1>Salesforce</h1>
+          <h2>Hybrid + UI</h2>
+          <h3>SPRING + SUMMER 2014</h3>
+        </div>
+        <a class="work-link" href="salesforce.html">
+          <div class="work-color"></div>
+          <img class="work-image" src="salesforce.jpg">
+        </a>
       </div>
-    </div>
-  </div>
-  <div id="portfolio" class="container teal-bg no-padding small-bottom">
-    <div class="container teal-bg no-bottom-padding">
-      <div class="content">
-        <h1 class="white"> My Work </h1>
-        <p class="white thinner"> Here's a collection of my previous work. Click on any device in the slideshow to view the case study for that specific project. </p>
+      <div class="work">
+        <div class="work-title">
+          <h1>Icon Set</h1>
+          <h2>Illustration</h2>
+          <h3>JUNE 2014</h3>
+        </div>
+        <a class="work-link" href="icon-set.html">
+          <div class="work-color"></div>
+          <img class="work-image" src="icon-set.png">
+        </a>
       </div>
-    </div>
-    <div class="flexslider">
-      <ul class="slides">
-        <li>
-          <img src="monitor.svg"/>
-        </li>
-        <li>
-          <img src="ipad.svg"/>
-        </li>
-        <li>
-          <img src="iphone.svg"/>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="container black-bg">
-    <div class="content">
-      <h1 class="white"> Get In Touch! </h1>
-      <p class="white thinner"> Feel free to contact me with any projects or opportunities at: </p>
-      <span id="email-link"> kevintxwu@gmail.com </span>
-      <br/>
-      <a id="mail-icon" class="icon" href="mailto:kevintxwu@gmail.com"></a>
     </div>
   </div>
 </body>
 <script>
-function scrollTo(element) { 
-  $('html, body').animate({scrollTop: $(element).offset().top}, 1000);
-}
-$(document).ready(function() {
-  var random = Math.random();
-  if (random < 0.33) {
-    $("#one").show();
-  } else if (random < 0.66) {
-    $("#two").show();
-  } else {
-    $("#three").show();
-  }
-  $('#home-icon').hover(function(){$(this).removeClass('bounceIn')});
-  $('.flexslider').flexslider({
-    animation: "slide",
+$(document).ready(function(){
+  $('#circle').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
   });
 });
 </script>
