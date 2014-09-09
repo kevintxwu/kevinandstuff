@@ -127,8 +127,11 @@ p {
 }
 
 .work-title {
+  display: block;
   float: left;
   width: 310px;
+  text-decoration: none;
+  color: black;
 }
 
 .work-link {
