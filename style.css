@@ -118,7 +118,7 @@ p {
 
 .work {
   margin-top: 100px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .cancel-margin {
