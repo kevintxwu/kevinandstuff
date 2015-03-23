@@ -15,20 +15,21 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 889, 
-				height: 500,
+				width: 1066, 
+				height: 600,
 				params: { enableDebugging:"0" }
 				
 			};
+			config.params["disableContextMenu"] = true;
 			var u = new UnityObject2(config);
-
+			
 			jQuery(function() {
 
 				var $missingScreen = jQuery("#unityPlayer").find(".missing");
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
 				$missingScreen.hide();
 				$brokenScreen.hide();
-				
+
 				u.observeProgress(function (progress) {
 					switch(progress.pluginStatus) {
 						case "broken":
@@ -64,7 +65,7 @@
 		<!--
 		body {
 			font-family: Helvetica, Verdana, Arial, sans-serif;
-			background-color: white;
+			background-color: #444;
 			color: black;
 			text-align: center;
 		}
@@ -85,6 +86,7 @@
 		}
 		div.content {
 			margin: auto;
+			width: 1166px;
 		}
 		div.broken,
 		div.missing {
@@ -108,34 +110,12 @@
 		}
 		div#unityPlayer {
 			cursor: default;
-			height: 500px;
-			width: 889px;
-      border: 60px solid #000;
-      border-radius: 30px;
-      margin: auto;
+			height: 600px;
+			width: 1066px;
+      border: 50px solid black;
+      border-radius: 50px;
 		}
-		*, body {
-      background-color: #fff;
-    }
-    p, a {
-      display: none;
-    }
-
-    @media (min-height: 650px) {
-      div#unityPlayer { margin-top: 25px; }
-    }
-
-    @media (min-height: 700px) {
-      div#unityPlayer { margin-top: 50px; }
-    }
-
-    @media (min-height: 750px) {
-      div#unityPlayer { margin-top: 75px; }
-    }
-
-    @media (min-height: 800px) {
-      div#unityPlayer { margin-top: 100px; }
-    }
+		-->
 		</style>
 	</head>
 	<body>
@@ -145,11 +125,6 @@
 				<div class="missing">
 					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
 						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-					</a>
-				</div>
-				<div class="broken">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
-						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
 					</a>
 				</div>
 			</div>
