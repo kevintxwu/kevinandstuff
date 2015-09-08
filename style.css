@@ -23,7 +23,7 @@ p, h1, h2, h3, h4 {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url("loader.gif") 50px 50px no-repeat #ffffff;
+  background: url(loader.gif) 50px 50px no-repeat #ffffff;
   background-size: 60px 60px;
 }
 
@@ -189,7 +189,7 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: url(view.svg);
+  background: url(home/view.svg);
   background-size: 690px 690px;
   background-position: center;
   transition: 0.2s linear;
@@ -197,7 +197,7 @@ p {
 }
 
 .progress {
-  background: url(progress.svg);
+  background: url(home/progress.svg);
   background-size: 690px 690px;
   background-position: center;
 }
