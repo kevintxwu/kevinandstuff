@@ -206,14 +206,6 @@ p {
   opacity: 0.6;
 }
 
-.work-title:hover {
-  cursor: pointer;
-}
-
-.work-title:hover ~ .work-link .work-color {
-  opacity: 0.6;
-}
-
 .work-image {
   float: left;
   width: 100%;
