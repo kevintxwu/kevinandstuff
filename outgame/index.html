@@ -5,8 +5,12 @@
   <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link href="../style.css" rel="stylesheet" type="text/css">
+  <meta property="og:title" content="Kevin & Stuff"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="My personal portfolio!"/>
+  <meta property="og:image" content="http://www.kevinandstuff.com/screen-shot.png"/>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="k.png">
+  <link rel="shortcut icon" href="../k.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   <title> Kevin & Stuff </title>
 </head>
@@ -24,9 +28,9 @@
   <div class="wrapper border-bottom">
     <div class="content">
       <img class="big" src="logo.svg">
-      <p>In my senior year of high school I founded a startup with a couple of friends. That was Outgame. The idea was to offer a streamlined event management platform to the multitude of hobby stores across the nation.<br>
-      Every week, hobby stores hold many, many events, all through pen and paper or some horrible archaic software. The Trading Card Game and tabletop gaming world was very unorganized, and there was no good event management system. The idea was to take Outgame and convince hobby stores nationwide to use it. Then, once people were using our system on a more frequent basis, to convince individual players to sign up for accounts.<br>
-      We later generalized Outgame for e-sports, physical sports, and any other competitive event. We planned to convert event managers, event participants, everyone into users.<br>
+      <p>In my senior year of high school I founded a startup with a couple of friends. That was Outgame. The idea was to offer a streamlined event management platform to the multitude of hobby stores across the nation.<br><br>
+      Every week, hobby stores hold many, many events, all through pen and paper or some horrible archaic software. The Trading Card Game and tabletop gaming world was very unorganized, and there was no good event management system. The idea was to take Outgame and convince hobby stores nationwide to use it. Then, once people were using our system on a more frequent basis, to convince individual players to sign up for accounts.<br><br>
+      We later generalized Outgame for e-sports, physical sports, and any other competitive event. We planned to convert event managers, event participants, everyone into users.<br><br>
       Once everyone had accounts, there were a lot of really cool things we planned to do, like stat-tracking, achievements, and game discovery. Outgame was designed to go from event management tool to a social network for gamers.</p>
       <img class="small" src="s1.png">
       <img class="small" src="s2.png">
@@ -34,11 +38,11 @@
       <img class="small" src="s4.png">
       <img class="small" src="s5.png">
       <img class="small" src="s6.png">
-      <p>This summer I picked up the project again and got together a team to build the actual web app. The team consisted of Deepak Warrier, Howard Chen, and myself. We worked mainly in Ruby on Rails.<br>
-      We worked with a local game store, Games of Berkeley, to test the app while we were developing it, but overall, the biggest organization we ever collaborated with was Readyforce, during their e-sports event LANHAMMER, a gaming tournament with over $25,000 in prizes and hundreds of participants.<br>
+      <p>This summer I picked up the project again and got together a team to build the actual web app. The team consisted of Deepak Warrier, Howard Chen, and myself. We worked mainly in Ruby on Rails.<br><br>
+      We worked with a local game store, Games of Berkeley, to test the app while we were developing it, but overall, the biggest organization we ever collaborated with was Readyforce, during their e-sports event LANHAMMER, a gaming tournament with over $25,000 in prizes and hundreds of participants.<br><br>
       While developing the app, I would say our most difficult task was connecting the check-in system to a flexible bracketing system.</p>
       <img class="medium" src="s7.png">
-      <p class="padding-bottom">Deepak did most of the work on the bracketing itself. After establishing the rules of non-elimination, swiss, elimination, and team bracket types, all we had to do was connect a jQuery dialog to a round generator and we had it working. When we finally implemented the brackets, we had a barebones but very useful web app for any sort of event management.<br>
+      <p class="padding-bottom">Deepak did most of the work on the bracketing itself. After establishing the rules of non-elimination, swiss, elimination, and team bracket types, all we had to do was connect a jQuery dialog to a round generator and we had it working. When we finally implemented the brackets, we had a barebones but very useful web app for any sort of event management.<br><br>
       Unfortunately, at the end of the summer, due to flaws in our business plan, mainly in how we would scale customer acquisition, we decided to drop Outgame. </p>
     </div>
   </div>
@@ -64,6 +68,13 @@
     </div>
   </div>
 </body>
+<div class="se-pre-con"></div>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").delay(500).fadeOut(1500);
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

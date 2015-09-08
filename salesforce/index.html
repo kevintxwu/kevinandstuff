@@ -3,10 +3,14 @@
 <head>
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
   <link href="../style.css" rel="stylesheet" type="text/css">
+  <meta property="og:title" content="Kevin & Stuff"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="My personal portfolio!"/>
+  <meta property="og:image" content="http://www.kevinandstuff.com/screen-shot.png"/>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="k.png">
+  <link rel="shortcut icon" href="../k.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   <title> Kevin & Stuff </title>
 </head>
@@ -24,11 +28,11 @@
   <div class="wrapper border-bottom">
     <div class="content">
       <img class="big" src="rollcall.jpg">
-      <p>I worked in a team with my good friend Howard Chen, under my favorite boss ever Sandeep Bhanot, building apps using Visualforce, Apex, and AngularJS. Salesforce1 mobile apps are mainly coded in web technologies, so I had the pleasant experience of dealing with the bugginess of the hybrid mobile world.<br>
+      <p>I worked in a team with my good friend Howard Chen, under my favorite boss ever Sandeep Bhanot, building apps using Visualforce, Apex, and AngularJS. Salesforce1 mobile apps are mainly coded in web technologies, so I had the pleasant experience of dealing with the bugginess of the hybrid mobile world.<br><br>
       The photo above is of our very first project, RollCall. RollCall is a check-in system for company events, based on Salesforce's existing functionality of an employee and customer database. Overall, we built four different apps over our tenure at Salesforce.</p>
       <img class="big" src="apps.png">
-      <p class="padding-bottom">The two apps shown above are Tasky and Inspector, our final two apps. By this time, Howard and I were at maximum efficiency, churning out apps in month long cycles.<br>
-      One thing you'll notice is that all the apps have the same blue navigation bar on the top of them. Since these apps have to be used within Salesforce1, I had to design them around the Salesforce1 navigation system. This meant bright colors to match the bright blue bar and equally minimalistic, flat UI.<br>
+      <p class="padding-bottom">The two apps shown above are Tasky and Inspector, our final two apps. By this time, Howard and I were at maximum efficiency, churning out apps in month long cycles.<br><br>
+      One thing you'll notice is that all the apps have the same blue navigation bar on the top of them. Since these apps have to be used within Salesforce1, I had to design them around the Salesforce1 navigation system. This meant bright colors to match the bright blue bar and equally minimalist, flat UI.<br><br>
       The four apps I created: RollCall, Inspector, Tasky, and ListMe are being released to Salesforce's app store AppExchange by the end of this quarter.</p>
     </div>
   </div>
@@ -53,6 +57,13 @@
       </div>
     </div>
 </body>
+<div class="se-pre-con"></div>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").delay(500).fadeOut(1500);
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

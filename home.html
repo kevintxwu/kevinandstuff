@@ -3,7 +3,7 @@
 <head>
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
   <link href="style.css" rel="stylesheet" type="text/css">
   <meta property="og:url" content="http://www.kevinandstuff.com"/>
   <meta property="og:title" content="Kevin & Stuff"/>
@@ -24,49 +24,52 @@
       <div id="subtitle">This is my site.</div>
       <div class="divider"></div>
       <h2>I'm a UC Berkeley student.<br>I like design, code, and startups.</h2>
+      <div class="button-wrapper">
+        <a class="button" href="#" target="_blank">Resume</a>
+        <a class="button" href="http://www.linkedin.com/in/kevintxwu" target="_blank">LinkedIn</a> 
+        <a class="button" href="https://github.com/kevintxwu" target="_blank">GitHub</a>
+      </div>
     </div>
   </div>
   <div class="wrapper">
     <div class="content">
       <div class="work cancel-margin">
-        <a class="work-title">
-          <h1>The Resistance</h1>
-          <h2>Mobile + UI</h2>
-          <h3>IN PROGRESS</h3>
-        </a>
-        <a class="work-link">
-          <div class="work-color progress"></div>
-          <img class="work-image" src="the-resistance.jpg">
-        </a>
-      </div>
-      <div class="work">
-        <a class="work-title" href="outgame">
+        <div class="work-title">
           <h1>Outgame</h1>
           <h2>Business + Web + UI</h2>
           <h3>AUGUST 2014</h3>
-        </a>
+<!--           <div class="button-wrapper">
+            <a class="button" href="outgame">View</a>
+          </div> -->
+        </div>
         <a class="work-link" href="outgame">
           <div class="work-color"></div>
           <img class="work-image" src="outgame.jpg">
         </a>
       </div>
       <div class="work">
-        <a class="work-title" href="salesforce">
+        <div class="work-title">
           <h1>Salesforce</h1>
           <h2>Hybrid + UI</h2>
           <h3>SPRING + SUMMER 2014</h3>
-        </a>
+<!--           <div class="button-wrapper">
+            <a class="button" href="salesforce">View</a>
+          </div> -->
+        </div>
         <a class="work-link" href="salesforce">
           <div class="work-color"></div>
           <img class="work-image" src="salesforce.jpg">
         </a>
       </div>
       <div class="work">
-        <a class="work-title" href="icon-set">
+        <div class="work-title">
           <h1>Icon Set</h1>
           <h2>Illustration</h2>
           <h3>JUNE 2014</h3>
-        </a>
+<!--           <div class="button-wrapper">
+            <a class="button" href="icon-set">View</a>
+          </div> -->
+        </div>
         <a class="work-link" href="icon-set">
           <div class="work-color"></div>
           <img class="work-image" src="icon-set.png">
@@ -75,6 +78,13 @@
     </div>
   </div>
 </body>
+<div class="se-pre-con"></div>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").delay(500).fadeOut(1500);
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

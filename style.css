@@ -14,6 +14,24 @@ p, h1, h2, h3, h4 {
   font-weight: normal;
 }
 
+.no-js #loader { display: none; }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("loader.gif") 50px 50px no-repeat #ffffff;
+  background-size: 60px 60px;
+}
+
+.spacer {
+  width: 100%;
+  height: 5px;
+}
+
 #circle {
   position: absolute;
   top: 50px;
@@ -34,8 +52,8 @@ p, h1, h2, h3, h4 {
   background: black;
   border-radius: 20px;
   opacity: 0;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
 }
 
 #circle:hover {
@@ -43,6 +61,29 @@ p, h1, h2, h3, h4 {
 }
 
 #circle:hover ~ #inner-circle {
+  opacity: 1;
+}
+
+.button-wrapper {
+  padding-top: 50px;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  font-family: 'Lato', serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 100px;
+  border: 2px solid black;
+  opacity: 0.3;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+}
+
+.button:hover {
   opacity: 1;
 }
 
@@ -78,7 +119,7 @@ p, h1, h2, h3, h4 {
 
 #subtitle {
   font-style: italic;
-  font-size: 48px;
+  font-size: 45px;
 }
 
 .divider {
@@ -91,20 +132,24 @@ p, h1, h2, h3, h4 {
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 36px;
+  margin-top: -10px;
 }
 
 h2 {
   font-size: 24px;
+  line-height: 31px;
 }
 
 h3 {
   margin-top: 50px;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 
 h4 {
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 
@@ -147,8 +192,8 @@ p {
   background: url(view.svg);
   background-size: 690px 690px;
   background-position: center;
-  transition: 0.25s;
-  webkit-transition: 0.25s;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
 }
 
 .progress {
@@ -158,7 +203,15 @@ p {
 }
 
 .work-color:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+.work-title:hover {
+  cursor: pointer;
+}
+
+.work-title:hover ~ .work-link .work-color {
+  opacity: 0.6;
 }
 
 .work-image {
@@ -207,8 +260,8 @@ p {
   background: black;
   border-radius: 20px;
   opacity: 0;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
 }
 
 .footer-link:hover {

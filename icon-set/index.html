@@ -5,8 +5,12 @@
   <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link href="../style.css" rel="stylesheet" type="text/css">
+  <meta property="og:title" content="Kevin & Stuff"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="My personal portfolio!"/>
+  <meta property="og:image" content="http://www.kevinandstuff.com/screen-shot.png"/>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="k.png">
+  <link rel="shortcut icon" href="../k.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   <title> Kevin & Stuff </title>
 </head>
@@ -53,6 +57,13 @@
       </div>
     </div>
 </body>
+<div class="se-pre-con"></div>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").delay(500).fadeOut(1500);
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
