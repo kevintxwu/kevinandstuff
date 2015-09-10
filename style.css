@@ -39,6 +39,7 @@ a:hover {
   background: url(loader-fast.gif) 100px 85px no-repeat;
   background-size: 60px 60px;
 }
+
 .white-everything {
   position: fixed;
   left: 0px;
@@ -78,11 +79,24 @@ a:hover {
   -webkit-transition: 0.2s linear;
 }
 
+.home-text {
+  position: absolute;
+  top: 85px;
+  left: 170px;
+  opacity: 0;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+
 #circle:hover {
   cursor: pointer;
 }
 
 #circle:hover ~ #inner-circle {
+  opacity: 1;
+}
+
+#circle:hover ~ .home-text {
   opacity: 1;
 }
 
