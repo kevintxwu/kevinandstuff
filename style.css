@@ -413,6 +413,10 @@ p {
     min-width: 0;
   }
 
+  .work:hover .work-cover {
+    opacity: 0;
+  }
+
   .button {
     opacity: 1;
   }
