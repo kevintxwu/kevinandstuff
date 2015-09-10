@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <script src="https://use.typekit.net/pme7sgy.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link href="style.css" rel="stylesheet" type="text/css">
   <meta property="og:url" content="http://www.kevinandstuff.com"/>
   <meta property="og:title" content="Kevin & Stuff"/>
@@ -13,7 +12,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="k.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-  <title> Kevin & Stuff - Icon Set </title>
+  <title> Kevin & Stuff </title>
 </head>
 <body>
   <a id="circle" href=".."></a>
@@ -24,40 +23,62 @@
       <div id="subtitle">Personal Website</div>
       <div class="divider"></div>
       <h2>I did a quick redesign of my website at the start of summer to practice my illustration skills. I had a fun time illustrating custom icons instead of just copying them from The Noun Project.</h2>
+      <div class="button-wrapper">
+        <a class="button" href="previous/home" target="_blank">View Site</a>
+      </div>
     </div>
   </div>
-  <div class="wrapper border-bottom">
+  <div class="wrapper">
     <div class="content">
-      <img class="big" src="home/icon-set.png">
+      <img class="big" src="icon-set-img/icon-set.png">
       <p>There's not too much to say about this one! I felt like drawing (electronically), and it was very fun. Here's what I ended up with, but in my opinion, the final color scheme was a little weak.</p>
       <img class="medium" src="icon-set-img/s1.png">
       <img class="medium" src="icon-set-img/s2.png">
       <img class="medium" src="icon-set-img/s3.png">
       <img class="medium" src="icon-set-img/s4.png">
-      <p class="padding-bottom">From this project, I learned a lot about color. Well, kind of. I guess I didn't really succeed because I didn't really like my color scheme in the end, but it was eye-opening. I'll probably stray towards stronger colors in my next couple of designs.</p>
+      <p class="no-padding-bottom">From this project, I learned a lot about color. Well, kind of. I guess I didn't really succeed because I didn't really like my color scheme in the end, but it was eye-opening. I'll probably stray towards stronger colors in my next couple of designs.</p>
+    </div>
+  </div>
+  <div class="wrapper border-bottom">
+    <div class="footer-hub">
+      <div class="footer-link-wrapper">
+        <a class="footer-link" href="calciumulator"></a>
+        <div class="footer-link-inner"></div>
+      </div>
+      <div class="footer-text">
+        <h4>Previous</h4>
+        <h2>Calciumulator</h2>
+      </div>
     </div>
   </div>
   <div class="wrapper">
-    <div class="content">
-      <h1 class="mobile-space">Other Projects:</h1>
-      <div class="footer-link-wrapper">
-        <a class="footer-link" href="outgame"></a>
-        <div class="footer-link-inner"></div>
+    <div id="footer" class="content">
+      <div class="footer-section">
+        <h3> Talk </h3>
+        <a href="mailto:kevintxwu@gmail.com"><h2> kevintxwu@gmail.com </h2></a>
       </div>
-      <div class="footer-text">
-        <h2>Outgame</h2>
-        <h4>AUGUST 2014</h4>
+      <div class="footer-section-small">
+        <h3> More </h3>
+        <a><h2> Resume </h2></a>
       </div>
-      <div class="footer-link-wrapper">
-        <a class="footer-link" href="salesforce"></a>
-        <div class="footer-link-inner"></div>
+      <div class="footer-section-small">
+        <a href="https://github.com/kevintxwu" target="_blank"><h2>GitHub</h2></a>
       </div>
-      <div class="footer-text">
-        <h2>Salesforce</h2>
-        <h4>SPRING + SUMMER 2014</h4>
+      <div class="footer-section-small">
+        <a href="http://www.linkedin.com/in/kevintxwu" target="_blank"><h2> LinkedIn </h2></a>
       </div>
     </div>
+  </div>
 </body>
+<div class="se-pre-con"></div>
+<div class="white-everything"></div>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").delay(400).fadeOut(1200, "linear");
+  $(".white-everything").delay(400).fadeOut(1200, "linear");
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

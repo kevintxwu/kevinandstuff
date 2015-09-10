@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <script src="https://use.typekit.net/pme7sgy.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link href="style.css" rel="stylesheet" type="text/css">
   <meta property="og:url" content="http://www.kevinandstuff.com"/>
   <meta property="og:title" content="Kevin & Stuff"/>
@@ -13,7 +12,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="k.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-  <title> Kevin & Stuff - Salesforce </title>
+  <title> Kevin & Stuff </title>
 </head>
 <body>
   <a id="circle" href=".."></a>
@@ -24,40 +23,78 @@
       <div id="subtitle">Business Suite</div>
       <div class="divider"></div>
       <h2>Starting from February 2014, I worked at Salesforce developing an array of open source mobile apps to demonstrate the power of their new platform: Salesforce1.</h2>
+      <div class="button-wrapper">
+        <a class="button" href="https://github.com/vincenttian/salesforce_rollcall" target="_blank">View RollCall</a>
+        <a class="button" href="https://github.com/chenhoward/salesforce_tasky" target="_blank">View Tasky</a>
+        <a class="button" href="https://github.com/chenhoward/salesforce_checklist" target="_blank">View Inspector</a>
+        <a class="button" href="https://github.com/chenhoward/salesforce_listme" target="_blank">View ListMe</a>
+      </div>
     </div>
   </div>
-  <div class="wrapper border-bottom">
+  <div class="wrapper">
     <div class="content">
       <img class="big" src="salesforce-img/rollcall.jpg">
       <p>I worked in a team with my good friend Howard Chen, under my favorite boss ever Sandeep Bhanot, building apps using Visualforce, Apex, and AngularJS. Salesforce1 mobile apps are mainly coded in web technologies, so I had the pleasant experience of dealing with the bugginess of the hybrid mobile world.<br><br>
       The photo above is of our very first project, RollCall. RollCall is a check-in system for company events, based on Salesforce's existing functionality of an employee and customer database. Overall, we built four different apps over our tenure at Salesforce.</p>
       <img class="big" src="salesforce-img/apps.png">
-      <p class="padding-bottom">The two apps shown above are Tasky and Inspector, our final two apps. By this time, Howard and I were at maximum efficiency, churning out apps in month long cycles.<br><br>
+      <p class="no-padding-bottom">The two apps shown above are Tasky and Inspector, our final two apps. By this time, Howard and I were at maximum efficiency, churning out apps in month long cycles.<br><br>
       One thing you'll notice is that all the apps have the same blue navigation bar on the top of them. Since these apps have to be used within Salesforce1, I had to design them around the Salesforce1 navigation system. This meant bright colors to match the bright blue bar and equally minimalist, flat UI.<br><br>
       The four apps I created: RollCall, Inspector, Tasky, and ListMe are being released to Salesforce's app store AppExchange by the end of this quarter.</p>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="content">
-      <h1 class="mobile-space">Other Projects:</h1>
+  <div class="wrapper border-bottom">
+    <div class="footer-hub">
       <div class="footer-link-wrapper">
-        <a class="footer-link" href="outgame"></a>
+        <a class="footer-link" href="elevate-africa"></a>
         <div class="footer-link-inner"></div>
       </div>
       <div class="footer-text">
-        <h2>Outgame</h2>
-        <h4>AUGUST 2014</h4>
+        <h4>Previous</h4>
+        <h2>Elevate Africa</h2>
       </div>
-      <div class="footer-link-wrapper">
-        <a class="footer-link" href="icon-set"></a>
+      <div class="float-separate mobile"></div>
+      <div class="footer-text float-right hide-mobile">
+        <h4>Next</h4>
+        <h2>Calciumulator</h2>
+      </div>
+      <div class="footer-link-wrapper float-right">
+        <a class="footer-link" href="calciumulator"></a>
         <div class="footer-link-inner"></div>
       </div>
-      <div class="footer-text">
-        <h2>Icon Set</h2>
-        <h4>JUNE 2014</h4>
+      <div class="footer-text mobile">
+        <h4>Next</h4>
+        <h2>Calciumulator</h2>
       </div>
     </div>
+  </div>
+  <div class="wrapper">
+    <div id="footer" class="content">
+      <div class="footer-section">
+        <h3> Talk </h3>
+        <a href="mailto:kevintxwu@gmail.com"><h2> kevintxwu@gmail.com </h2></a>
+      </div>
+      <div class="footer-section-small">
+        <h3> More </h3>
+        <a><h2> Resume </h2></a>
+      </div>
+      <div class="footer-section-small">
+        <a href="https://github.com/kevintxwu" target="_blank"><h2>GitHub</h2></a>
+      </div>
+      <div class="footer-section-small">
+        <a href="http://www.linkedin.com/in/kevintxwu" target="_blank"><h2> LinkedIn </h2></a>
+      </div>
+    </div>
+  </div>
 </body>
+<div class="se-pre-con"></div>
+<div class="white-everything"></div>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").delay(400).fadeOut(1200, "linear");
+  $(".white-everything").delay(400).fadeOut(1200, "linear");
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
