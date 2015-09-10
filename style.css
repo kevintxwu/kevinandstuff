@@ -115,6 +115,9 @@ a:hover {
   border-radius: 100px;
   border: 2px solid black;
   opacity: 0.3;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 25px;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
 }
@@ -147,6 +150,12 @@ a:hover {
 }
 
 #header-adjust {
+  margin-top: 190px;
+  margin-bottom: 60px;
+  padding: 0 100px 0 100px;
+}
+
+#home-header-adjust {
   margin-top: 190px;
   margin-bottom: 100px;
   padding: 0 100px 0 100px;
@@ -404,6 +413,10 @@ p {
     min-width: 0;
   }
 
+  .button {
+    opacity: 1;
+  }
+
   .se-pre-con {
     background: url(loader-fast.gif) 25px 50px no-repeat;
     background-size: 60px 60px;
@@ -418,6 +431,18 @@ p {
     display: none;
   }
 
+  .home-text {
+    display: none;
+  }
+
+  #footer a {
+    border: none;
+  }
+
+  #footer a:hover {
+    border: none;
+  }
+
   .content {
     margin: 50px auto 50px auto;
     box-sizing: border-box;
@@ -429,11 +454,15 @@ p {
     padding: 50px 0 25px;
   }
 
-  #header-adjust {
+  #header-adjust, #home-header-adjust {
     margin: 150px 0 50px 0;
     padding: 0 25px 0 25px;
     max-width: 100%;
     min-width: 0;
+  }
+
+  #header-adjust {
+    margin-bottom: 10px;
   }
 
   #footer {
