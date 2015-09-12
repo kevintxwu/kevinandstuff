@@ -180,7 +180,6 @@ a:hover {
 
 .portfolio {
   font-size: 0;
-  background: #ddd;
 }
 
 .work {
@@ -311,7 +310,7 @@ p {
   padding: 50px 400px 50px 0;
   font-size: 16px;
   font-weight: 100;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 .big {
@@ -389,6 +388,19 @@ p {
 
 .mobile {
   display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.text-link {
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+}
+
+.text-link:hover {
+  color: #3285ff;
 }
 
 @media (max-width: 1200px) {
