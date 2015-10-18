@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 body, html {
@@ -7,7 +8,7 @@ body, html {
   margin: 0;
   height: 100%;
   font-family: 'museo-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  color: black;
+  color: #111;
   max-width: 100%;
 }
 
@@ -20,7 +21,7 @@ p, h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #444;
 }
 
 a:hover {
@@ -68,7 +69,7 @@ a:hover {
   left: 100px;
   width: 50px;
   height: 50px;
-  border: 5px solid black;
+  border: 5px solid #111;
   border-radius: 30px;
   z-index: 1;
 }
@@ -79,7 +80,7 @@ a:hover {
   left: 110px;
   width: 40px;
   height: 40px;
-  background: black;
+  background: #111;
   border-radius: 20px;
   opacity: 0;
   transition: 0.2s linear;
@@ -113,14 +114,14 @@ a:hover {
 
 .button {
   text-decoration: none;
-  color: black;
-  font-family: "museo-sans",sans-serif;
+  color: #111;
+  font-family: 'museo-sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
   padding: 10px 20px;
   margin-right: 15px;
   border-radius: 100px;
-  border: 2px solid black;
+  border: 2px solid #111;
   opacity: 0.3;
   display: inline-block;
   margin-top: 0;
@@ -144,7 +145,7 @@ a:hover {
 }
 
 .border-bottom {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #111;
 }
 
 .padding-bottom {
@@ -182,7 +183,7 @@ a:hover {
   margin: 50px 0 50px 0;
   height: 5px;
   width: 100px;
-  background: black;
+  background: #111;
 }
 
 .portfolio {
@@ -195,7 +196,7 @@ a:hover {
   display: inline-block;
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #111;
   padding: 0;
   margin: 0;
 }
@@ -274,7 +275,7 @@ a:hover {
 }
 
 #footer a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #444;
 }
 
 .footer-section {
@@ -297,7 +298,8 @@ h1 {
 h2 {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 100;
+  font-weight: 300;
+  color: #444;
   max-width: 500px;
 }
 
@@ -317,7 +319,8 @@ p {
   width: 600px;
   padding: 50px 400px 50px 0;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
+  color: #444;
   line-height: 32px;
 }
 
@@ -358,7 +361,7 @@ p {
   position: relative;
   width: 50px;
   height: 50px;
-  border: 5px solid black;
+  border: 5px solid #111;
   border-radius: 30px;
   z-index: 1;
 }
@@ -369,7 +372,7 @@ p {
   right: -10px;
   width: 40px;
   height: 40px;
-  background: black;
+  background: #111;
   border-radius: 20px;
   opacity: 0;
   transition: 0.2s linear;
