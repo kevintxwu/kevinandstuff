@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta property="og:url" content="http://www.kevinandstuff.com/design-smell"/>
+<meta property="og:title" content="Design Smell"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="A collection of design resources."/>
+<meta property="og:image" content="http://www.kevinandstuff.com/design-smell-screen.png"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="smell.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<title> Design Smell </title>
+<style>
+html {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: #111;
+  max-width: 100%;
+  background: #eee;
+}
+
+p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: #666;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #3285ff;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #111;
+  color: #fff;
+}
+
+h1 {
+  color: #111;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.content {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px;
+  background: #fff;
+}
+
+.footer {
+  padding: 40px 100px;
+}
+
+.sections {
+  padding: 0;
+}
+
+.title {
+  padding: 150px 0 25px 0;
+}
+
+.title-text {
+  padding: 0 0 160px;
+  max-width: 500px;
+}
+
+.section-title {
+  padding: 40px 100px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+
+.border {
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+.sections:hover .section-title {
+  opacity: 0.2;
+}
+
+.section-title:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.section {
+  display: none;
+}
+
+.section-content {
+  width: 100%;
+  overflow: auto;
+  padding: 50px 100px 20px;
+}
+
+.column {
+  float: left;
+  width: 333.33px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.column-2 {
+  float: left;
+  width: 666.66px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.column a {
+  display: block;
+  padding-top: 5px;
+}
+
+.note {
+  float: left;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 25px 35px;
+  border: 1px solid #eee;
+  height: 100%;
+  margin-bottom: 40px;
+}
+</style>
+</head>
+<body>
+  <div class="content">
+    <h1 class="title"> Design Smell </h1>
+    <p class="title-text"> Design Smell is a reference to <a href="http://c2.com/cgi/wiki?CodeSmell" target="_blank">Code Smell</a>, a developer's feel for good code. This is a collection of practical resources to help you develop your Design Smell, your feel for good design. </p>
+  </div>
+  <div class="content sections">
+    <div class="border"></div>
+    <h2 class="section-title" onclick="reveal(this, 's1');"> General </h2>
+    <div class="section" id="s1">
+      <div class="border"></div>
+      <div class="section-content">
+        <div class="column">
+          <a href="http://blog.method.ac/design/youre-already-a-pretty-good-designer/" target="_blank"> You're Already a Pretty Good Designer </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            An introduction to design.
+          </p>
+        </div>
+        <div class="column">
+          <a href="https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda" target="_blank"> 7 Rules for Creating Gorgeous UI </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;This article is not theory. This article is pure application. You won’t see anything about golden ratios. I don’t even mention color theory. Only what I’ve learned from being bad and then deliberately practicing.&rdquo;
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div>
+    <h2 class="section-title" onclick="reveal(this, 's2');"> Typography </h2>
+    <div class="section" id="s2">
+      <div class="border"></div>
+      <div class="section-content">
+        <div class="column">
+          <a href="http://practicaltypography.com/" target="_blank"> Butterick&rsquo;s Practical Typography </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;This book will make you a bet­ter typographer.&rdquo;
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://www.webfontsgallery.com/browse-by-font" target="_blank"> The Web Fonts Gallery </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            A collection of examples of web fonts in practice.
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://hellohappy.org/beautiful-web-type/" target="_blank"> Beautiful Web Type </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;A showcase of the best typefaces from the Google web fonts directory.&rdquo;
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://webdesign.tutsplus.com/articles/a-beginners-guide-to-pairing-fonts--webdesign-5706" target="_blank"> A Beginner's Guide to Pairing Fonts </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;This guide will help you get started with font pairing for the web.&rdquo;
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://practice.typekit.com/lesson/selecting-typefaces-for-body-text/" target="_blank"> Selecting Typefaces for Body Text </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            A guide to selecting typefaces for body text with many insightful examples.
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://maxvoltar.com/archive/-webkit-font-smoothing" target="_blank"> WebKit Font Smoothing </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            A CSS trick that can make a huge difference in text rendering.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div>
+    <h2 class="section-title" onclick="reveal(this, 's3');"> Color </h2>
+    <div class="section" id="s3">
+      <div class="border"></div>
+      <div class="section-content">
+        <div class="column">
+          <a href="https://www.helpscout.net/blog/psychology-of-color/" target="_blank"> The Psychology of Color </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;The psychology of color as it relates to persuasion is one of the most interesting—and most controversial—aspects of marketing.&rdquo;
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://designforhackers.com/blog/impressionist-color-theory/" target="_blank"> Why Monet Never Used Black </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;Monet’s paintings evoke a sense of energy and life, they leap off the canvas with color and contrast, but Monet somehow managed to avoid using the color black for nearly his entire painting career. By avoiding black in your own designs, you can replicate some of this dynamism.&rdquo;
+          </p>
+        </div>
+        <div class="column">
+          <a href="https://dribbble.com/shots/166246-My-Secret-for-Color-Schemes" target="_blank"> My Secret for Color Schemes </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            A trick for cohesive color schemes.
+          </p>
+        </div>
+        <div class="column">
+          <a href="https://dribbble.com/shots/1155655-Colour-tips" target="_blank"> Color Tips </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            An interesting experiment with adjusting colors by grayscale.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div>
+    <h2 class="section-title" onclick="reveal(this, 's4');"> Iconography </h2>
+    <div class="section" id="s4">
+      <div class="border"></div>
+      <div class="section-content">
+        <div class="column">
+          <a href="https://thenounproject.com/" target="_blank"> The Noun Project </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            Icons for everything.
+          </p>
+        </div>
+        <div class="column">
+          <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"> Font Awesome </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            &ldquo;Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.&rdquo;
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div>
+    <h2 class="section-title" onclick="reveal(this, 's5');"> Inspiration </h2>
+    <div class="section" id="s5">
+      <div class="border"></div>
+      <div class="section-content">
+        <div class="note">
+          <p> A personal note: Picasso famously once said &ldquo;Good artists copy, great artists steal.&rdquo; I believe that the most important thing you can do when designing is studying and referencing the work of as many other designers as possible. Start by almost completely copying entire themes, but never stop stealing and developing other designers&rsquo; color schemes, font pairings, and layouts. </p>
+        </div>
+        <div class="column">
+          <a href="https://dribbble.com/" target="_blank"> Dribbble </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            The best place to steal colors.
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://pttrns.com/" target="_blank"> Pttrns </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            A directory of mobile app screenshots organized by UX patterns.
+          </p>
+        </div>
+        <div class="column">
+          <a href="https://www.thebestdesigns.com/" target="_blank"> The Best Designs </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            My preferred collection of website designs to reference.
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://www.cssdesignawards.com/" target="_blank"> CSS Design Awards </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            An alternative collection of beautiful websites.
+          </p>
+        </div>
+        <div class="column">
+          <a href="http://www.awwwards.com/" target="_blank"> Awwwards </a>
+        </div>
+        <div class="column-2">
+          <p> 
+            An alternative to the alternative.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="border"></div>
+  </div>
+  <div class="content footer">
+    <p> Made by some random kid called <a href="http://www.kevinandstuff.com/" target="_blank">Kevin Wu</a>. </p>
+  </div>
+</body>
+<script>
+function reveal(element, section) {
+  $(element).toggleClass("active");
+  $("#" + section).slideToggle();
+}
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55826148-1', 'auto');
+ga('send', 'pageview');
+</script>
+</html>
