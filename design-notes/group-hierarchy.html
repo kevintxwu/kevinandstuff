@@ -29,19 +29,19 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          The elements of a layout should be organized in a hierarchy of nested groups. Your first layer contains a few groups, and each of those groups contains smaller groups within them, and so on. The fastest way to demonstrate this is an example:
+          The elements of a layout should be organized in a hierarchy of nested groups. The fastest way to demonstrate this is an example:
         </p>
       </div>
       <img src="layout/airbnb.png">
       <div class="column-2">
         <p> 
-          Consider Airbnb&rsquo;s website above. This layout is made up of many groups nested within each other. The first layer of groups contains two groups: the content group and the external button group.
+          Consider Airbnb&rsquo;s website above. This layout is made up of many groups nested within each other. The first layer of groups contains the content groups and a button group.
         </p>
       </div>
       <img src="layout/airbnb-layer1.png">
       <div class="column-2">
         <p> 
-          While we organize this page into nested groups, let&rsquo;s also talk about why this organization is important in the first place. There are a few general patterns that almost all layouts should follow. To make any clean layout, you will have to understand them.
+          While we organize this page into nested groups, let&rsquo;s also talk about why this organization is even important. There are a few general patterns useful to almost all layouts:
         </p>
       </div>
     </div>
@@ -51,7 +51,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          Each of these groups on each layer of the page must be evenly-spaced from each other. As we inspect the groups in each layer, we can further verify that this pattern. For now, we can see it in action on the first layer. The space between each first layer group is identical.
+          Each of these groups in each layer of the page must be evenly-spaced from each other. We can see this in action on the first layer.
         </p>
       </div>
       <img src="layout/airbnb-layer1-spacing.png">
@@ -62,7 +62,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          Not only should each group be equidistant, but also each should also be aligned along a single axis. While whether the groups are center, left, or right aligned is up to personal judgement, if they are in the same layer, they must all be aligned the same way. Here, the first layer elements are all center-aligned.
+          While whether the groups are center, left, or right aligned is up to personal judgement, if they are in the same layer, they must all be aligned the same way.
         </p>
       </div>
       <img src="layout/airbnb-layer1-alignment.png">
@@ -76,7 +76,7 @@
       <img src="layout/airbnb-layer2.png">
       <div class="column-2">
         <p> 
-          The second layer of groups within the &ldquo;Just for the weekend&rdquo; group only has two groups total in it: the titles group and the locations group, so its groups are obviously equidistant. However, an important thing to note is the spacing between these two inner groups is smaller than the spacing between the outer layer of groups. This brings us to our third pattern in group hierarchy:
+          In the second layer, between only two groups, the spacing is obviously equal. However, the spacing between these two inner groups is noticeably smaller than the spacing between the outer groups. This brings us to our third pattern:
         </p>
       </div>
     </div>
@@ -86,18 +86,18 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          As you design in deeper layers, spacing between groups often gets smaller and smaller. This is because proximity is an effective way of visually associating elements. The closer elements are, the more related they seem to be. For example, the similar Napa, Sonoma, and Santa Cruz boxes below are closer to each other than to the &ldquo;See All Destinations&rdquo; button.
+          As you design in deeper layers, spacing between groups often gets smaller and smaller. This is because the closer elements are, the more related they seem to be.
         </p>
       </div>
       <img src="layout/airbnb-layer3.png">
       <div class="column-2">
         <p> 
-          The third layer of groups within the locations group, consisting of the Napa, Sonoma, and Santa Cruz boxes, maintains the same patterns. The Napa, Sonoma, and Santa Cruz boxes are equidistant from each other and are horizontally aligned by a single axis. Their spacing is also less than the spacing on outer layers. 
+          The Napa, Sonoma, and Santa Cruz boxes are equidistant and horizontally aligned. They&rsquo;re also closer to each other than to any outer group, like the &ldquo;See All Destinations&rdquo; button.
         </p>
       </div>
       <div class="column-2">
         <p>
-          It&rsquo;s important to note that the third pattern has many exceptions. In a layer where groups have little to no padding this doesn&rsquo;t mean every deeper layer must also have little to no padding. The third pattern is helpful in the large majority of comparisons between inner layers and outer layers, but, as with any mere pattern, personal judgement is essential. Finally, we have one last pattern to cover.
+          The third pattern has many exceptions. In a layer where groups have little to no padding this doesn&rsquo;t mean every deeper layer must also have little to no padding. As with any mere pattern, personal judgement is necessary. Finally, we have one last pattern:
         </p>
       </div>
     </div>
@@ -107,7 +107,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          A group with edges refers to elements like images, buttons, cards, or anything with an outline. Padding refers to the space around the groups within a layer group. In a group with no edges, there is no visible padding, but in a group with edges, padding is obvious. For example, in the Napa box below, padding on the top and bottom of the text is equal.
+          A group with edges refers to elements like images, cards, or anything with an outline. Padding refers to the space around the groups within a layer group.
         </p>
       </div>
     </div>
@@ -115,13 +115,13 @@
       <img src="layout/airbnb-layer4.png">
       <div class="column-2">
         <p> 
-          Padding matters for groups like the Napa, Sonoma, and Santa Cruz boxes, or for groups like the &ldquo;See All Destinations&rdquo; button or the turquoise &ldquo;See What You Can Earn&rdquo; button on the top right of the browser. Padding does not matter for something like the overall &ldquo;Just for the weekend&rdquo; group, which is a group without edges and without visible padding.
+          In a group with edges, like the Napa box, padding matters. In a group without edges, like the &ldquo;Just for the weekend&rdquo; content group, padding is irrelevant.
         </p>
       </div>
       <img src="layout/airbnb-layer-all.png">
       <div class="column-2">
         <p> 
-          The idea is to see layouts with imaginary lines like those above. Layouts are not a set of single elements, but a hierarchy of nested groups. While this organization makes sense, at this point, with these results, you may be thinking: 
+          The idea is to see layouts with imaginary lines like those above. Layouts are not a set of single elements, but a hierarchy of nested groups. Now, you may be thinking: 
         </p>
       </div>
     </div>
@@ -131,7 +131,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-           I&rsquo;d say that despite the intuition being easy to grasp, in practice, even professional product designers make easily avoidable mistakes, with something lost in translation or with a slight oversight. Thinking in group hierarchy could bring them that much closer to perfection. Let me point out a few of these errors currently in popular apps. Keep in mind these errors will seem small and almost inconsequential. I am purposefully nitpicking to demonstrate that these mistakes appear and that they are easily found with group hierarchy. They aren&rsquo;t a major issue as long as there aren&rsquo;t too many.
+           In practice, even professional product designers make mistakes they can easily avoid by thinking in group hierarchy. Allow me to purposefully nitpick to demonstrate:
         </p>
       </div>
     </div>
@@ -146,12 +146,12 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-           The first image is the Etsy app. It makes the pretty common error of inconsistent padding within a group. While it is true that bottom-heavy design usually looks better than top-heavy design, the top padding of &ldquo;Home&rdquo; is much too large compared to its bottom padding. In addition, there&rsquo;s the fact that some words like &ldquo;Trending&rdquo; have letters like &ldquo;g&rdquo; that make the word appear even lower. Overall, you have an undeniably imbalanced button.
+           The first image is the Etsy app. It makes the common error of inconsistent padding. While it&rsquo;s true that bottom-heavy design usually looks better than top-heavy design, the top padding of &ldquo;Home&rdquo; is much too large compared to its bottom padding. Add in the fact that some words like &ldquo;Trending&rdquo; have letters like &ldquo;g&rdquo; that make the word appear even lower, and you have an undeniably imbalanced button.
         </p>
       </div>
       <div class="column-2">
         <p> 
-           The second image is the Google Plus app. I believe the top of the profile image and the top of the comment title should be aligned when organized in group hierarchy. A nice side effect of realigning the title of the comments is also extra breathing room between the tightly jammed comment title and body. I'd argue that the third pattern is helpful here. The inner spacing between each line in the comment body itself should be no larger than the outer spacing between the comment title and body. Let&rsquo;s see these changes in action:
+           The second image is the Google Plus app. The top of the profile image and the top of the comment title should be aligned when organized in group hierarchy. A nice side effect of realigning the title of the comments is extra breathing room between the tightly jammed comment title and body. The third pattern is helpful here: the inner spacing between each line in the comment body itself should be no larger than the outer spacing between the comment title and body. Let&rsquo;s see these changes in action:
         </p>
       </div>
     </div>
@@ -172,7 +172,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-           Admittedly these tweaks have small effects, but they are improvements, a step closer to perfection. Polishing design is essentially repeated tweaks. Yes, it is nitpicking, but you have to remember that these are apps designed and built by massive teams funded with millions of dollars. If even they are susceptible to a few errors, albeit mostly insignificant, just how many errors are individual designers susceptibile to? These examples show that these errors can be subtle enough to appear in any design no matter the level of the designers, but fret not! I'm proposing that group hierarchy is an easy way to recognize them.
+           Admittedly these tweaks are small improvements. You have to remember these are apps designed and built by massive teams funded with millions of dollars. If even they are susceptible to a few errors, albeit mostly insignificant, just how many errors are individual designers susceptibile to? These errors are clearly easy to overlook, but I propose group hierarchy is a good way to avoid them.
         </p>
       </div>
       <div class="column-2">
