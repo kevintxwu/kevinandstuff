@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta property="og:url" content="http://www.kevinandstuff.com/design-smell"/>
+<meta property="og:title" content="Design Notes"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="A set of personal design notes focused on analyzing methods and examples."/>
+<meta property="og:image" content="http://www.kevinandstuff.com/design-smell-screen.png"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="design-notes.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../smell.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<title> Kevin's Design Notes </title>
+</head>
+<body>
+  <div class="content">
+    <a href="../design-notes">
+      <i class="fa fa-arrow-left back"></i>
+    </a>
+    <h1 class="title"> Group Hierarchy </h1>
+    <p class="title-text"> My formula for thinking about spacing and alignment. </p>
+  </div>
+  <div class="content sections">
+    <div class="border"></div>
+    <div class="section-content">
+      <h2> Thinking of elements in groups </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+          The elements of a layout should be organized in a hierarchy of nested groups. Your first layer contains a few group elements, and with each deeper layer, each of those elements contains smaller group elements within them, which contain even smaller group elements, and so on. The fastest way to demonstrate this is an example:
+        </p>
+      </div>
+      <img src="layout/airbnb.png">
+      <div class="column-2">
+        <p> 
+          Consider the section of Airbnb&rsquo;s website above. This layout is made up of many groups nested within each other. The first layer of groups features two group elements: the content element and the external button element.
+        </p>
+      </div>
+      <img src="layout/airbnb-layer1.png">
+      <div class="column-2">
+        <p> 
+          While we abstract this page into nested groups, let&rsquo;s also talk about why this abstraction is even important in the first place. There are two general patterns that almost all layouts should follow. To make any clean layout, you will have to understand them.
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <h2> All groups in the same layer should be equidistant </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+          This means that each of these group elements on each layer of the page must be evenly-spaced from each other. As we inspect the groups on each layer, we can verify that this pattern holds true generally. For now, we can see it in action on the first layer. The space between each first layer element is exactly the same.
+        </p>
+      </div>
+      <img src="layout/airbnb-layer1-spacing.png">
+    </div>
+    <div class="section-content no-padding-top">
+      <h2> All groups in the same layer should be aligned </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+          Not only should each group element be equidistant, but they should also all be aligned along a single axis. While whether the groups are center-aligned, left-aligned, or right-aligned is up to personal judgement, if they are on the same layer, they must all be aligned the same way. Here the first layer elements are all center-aligned.
+        </p>
+      </div>
+      <img src="layout/airbnb-layer1-alignment.png">
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+          But the first layer by itself is a relatively simple example. Let us also continue by considering the second layer of groups nested within the &ldquo;Just for the weekend&rdquo; group.
+        </p>
+      </div>
+      <img src="layout/airbnb-layer2.png">
+      <div class="column-2">
+        <p> 
+          The second layer of groups within the &ldquo;Just for the weekend&rdquo; group isn&rsquo;t particularly interesting because there are only two group elements in it: the titles group and the locations group. However, an important thing to note is the spacing between these two inner groups is different from the the spacing between the outer layer of groups. This brings us to our third pattern, which actually is more like a lack of a pattern:
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <h2> Groups from separate layers don&rsquo;t need to be equidistant or aligned </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+          In fact, oftentimes you&rsquo;ll see that as you go deeper in layers, spacing gets smaller and smaller. This is because proximity is an effective way of visually associating multiple elements. The closer elements are, the more related they seem to be. For example, the Napa, Sonoma, and Santa Cruz boxes below all link to the same type of page: individual location pages. Thus, they&rsquo;re much closer to each other than to the general &ldquo;See All Destinations&rdquo; button, which links to a different type of page: the index of all location pages.
+        </p>
+      </div>
+      <img src="layout/airbnb-layer3.png">
+      <div class="column-2">
+        <p> 
+          The third layer of groups within the locations group, consisting of the Napa, Sonoma, and Santa Cruz boxes, maintains the same patterns. The location boxes on the third layer are equidistant from each other and are horizontally aligned by a single axis. Still, their spacing and alignment differs from the spacing on outer layers. Finally, there is one last relationship between a group and its layer group.
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <h2> A group&rsquo;s padding should be consistent </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+          Padding refers to the space around the groups within a layer group. In a group with no edges, there is no visible padding, but in a group with clear edges like images, buttons, or cards, padding is important. For example, in the Napa group below, padding on the top and bottom of the text is equal.
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <img src="layout/airbnb-layer4.png">
+      <div class="column-2">
+        <p> 
+          Padding matters for elements like the Napa, Sonoma, and Santa Cruz boxes, or for elements like the &ldquo;See All Destinations&rdquo; button or the turquoise &ldquo;See What You Can Earn&rdquo; button on the top right of the browser. Padding does not matter for something like the overall "Just for the weekend" group, which is group without visible edges and without visible padding.
+        </p>
+      </div>
+      <img src="layout/airbnb-layer-all.png">
+      <div class="column-2">
+        <p> 
+          If we look at a collection of all the nested groups, we can see that though alignment remains largely the same (it doesn&rsquo;t have to), spacing changes in between each layer. However, within each layer all spacing and alignment is exactly the same. At this point, you may be wondering: 
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <h2> But isn&rsquo;t this obvious? </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+           I'd say that despite the general intuition being easy to grasp, even professional product teams make easily avoidable mistakes, either by something being lost in translation or by a slight oversight. If the team overall followed some form of group hierarchy they would be that much closer to perfection. Let me point out a few of these errors that are currently in real apps. Keep in mind that most of the errors I point out are small and almost inconsequential. I am purposefully nitpicking to demonstrate that these mistakes appear, and want to emphasize that they are a not a major issue as long as there aren&rsquo;t too many:
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-1half">
+        <img src="layout/etsy.png">
+      </div>
+      <div class="column-1half">
+        <img src="layout/google-plus.png">
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+           The first picture is the Etsy app. It makes a pretty common error of not having consistent padding within a group. While it is true that bottom-heavy design usually looks better than top-heavy design, the padding on top of &ldquo;Home&rdquo; is too noticeably greater than the padding below it. Add in the fact that some words like &ldquo;Trending&rdquo; have letters like g that make the text appear even lower, and you have an imbalanced button.
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+           The second picture is the Google Plus app. I believe the top of the profile image and the top of the comment title could be aligned if they were thinking about these comments in group hierarchy. A nice side effect of realigning the title of the comments would also be that there'd be a little more breathing room between the title and the body of the comment. Let's see these changes in action:
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-1half">
+        <img src="layout/etsy-original.png">
+      </div>
+      <div class="column-1half">
+        <img src="layout/etsy-fixed.png">
+      </div>
+      <div class="column-1half">
+        <img src="layout/google-plus-original.png">
+      </div>
+      <div class="column-1half">
+        <img src="layout/google-plus-fixed.png">
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+           Admittedly, these tweaks have small effects, but they are improvements, a step closer to perfection. Yes, I'm nitpicking, but you have to remember that these are apps designed and built by massive teams funded with millions of dollars. If even top tech companies are susceptible to a few errors, albeit insignificant, just how many errors are individual designers susceptibile to if we're not careful and precise? These errors can be non-obvious, but a formulaic thinking process can help us avoid them.
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p> 
+           To conclude, let's review the four patterns of group hierarchy we covered, and then apply them to something not as professional for a far more noticeable effect. The patterns are:
+        </p>
+        <p class="point"> 
+           - All groups in the same layer should be equidistant.
+        </p>
+        <p class="point"> 
+           - All groups in the same layer should be aligned.
+        </p>
+        <p class="point"> 
+           - Groups from separate layers don&rsquo;t need to be equidistant or aligned.
+        </p>
+        <p class="point bottom-point"> 
+           - A group&rsquo;s padding should be consistent.
+        </p>
+        <p> 
+           When these patterns are all ignored, we see disaster. On the other hand, when all these patterns are followed, beauty comes naturally. We can see the difference in this example based on a League of Legends statistics app: (To be continued).
+        </p>
+      </div>
+    </div>
+    <div class="border"></div>
+  </div>
+  <div class="content footer">
+    <p> Written by some random kid called <a href="http://www.kevinandstuff.com/" target="_blank">Kevin Wu</a>. </p>
+  </div>
+</body>
+<script>
+function reveal(element, section) {
+  $(element).toggleClass("active");
+  $("#" + section).slideToggle();
+}
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55826148-1', 'auto');
+ga('send', 'pageview');
+</script>
+</html>

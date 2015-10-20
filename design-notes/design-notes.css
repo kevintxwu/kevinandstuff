@@ -1,0 +1,194 @@
+html {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: #111;
+  max-width: 100%;
+  background: #eee;
+}
+
+p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: #666;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #3285ff;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #111;
+  color: #fff;
+}
+
+h1 {
+  color: #111;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.content {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px;
+  background: #fff;
+}
+
+.footer {
+  padding: 40px 100px;
+}
+
+.sections {
+  padding: 0;
+}
+
+.title {
+  padding: 150px 0 25px 0;
+}
+
+.title-text {
+  padding: 0 0 160px;
+  max-width: 500px;
+}
+
+.section-title {
+  padding: 40px 100px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+
+.border {
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+.sections:hover .section-title {
+  opacity: 0.2;
+}
+
+.section-title:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.section {
+  display: none;
+}
+
+.section-content {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: auto;
+  padding: 50px 100px 20px;
+}
+
+.column {
+  float: left;
+  width: 333.33px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.column-1half {
+  float: left;
+  width: 500px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.column-2 {
+  float: left;
+  width: 666.66px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.column a {
+  display: block;
+  padding-top: 5px;
+}
+
+.note {
+  float: left;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 25px 35px;
+  border: 1px solid #eee;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.back {
+  float: left;
+  display: block;
+  font-size: 20px;
+  color: #111;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #3285ff;
+}
+
+.visible {
+  display: block !important;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+img {
+  width: 100%;
+}
+
+img.placeholder {
+  opacity: 0;
+}
+
+.point {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.bottom-point {
+  padding-bottom: 20px;
+}
