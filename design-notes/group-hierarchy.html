@@ -24,6 +24,16 @@
   <div class="content sections">
     <div class="border top-border"></div>
     <div class="section-content">
+      <h2> Preface </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="column-2">
+        <p>
+          Most designers approach spacing and alignment by tweaking elements until they look right. After a lot of experience, designers are capable of creating polished and clean layouts, but the classic trial and error method seems somewhat inefficient. This is an attempt to precisely describe spacing and alignment patterns to help beginning designers develop their design sense and to help experienced designers work out troublesome details.
+        </p>
+      </div>
+    </div>
+    <div class="section-content no-padding-top">
       <h2> Thinking of elements in groups </h2>
     </div>
     <div class="section-content no-padding-top">
@@ -81,29 +91,29 @@
       </div>
     </div>
     <div class="section-content no-padding-top">
-      <h2> A group inside a group without edges should have less spacing than its parent </h2>
+      <h2> An inner layer should have less spacing than an outer layer </h2>
     </div>
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p>
-          Let parents refer to the outer groups and children refer to the inner groups. Children should be closer to each other than to their parents (ha ha). This is because the closer elements are the more related they are implied to be.
+          As you design in deeper layers, spacing between groups often gets smaller and smaller. This is because the closer elements are the more related they are implied to be.
         </p>
       </div>
       <img src="layout/airbnb-layer3.png">
       <div class="column-2">
         <p> 
-          The Napa, Sonoma, and Santa Cruz boxes are equidistant and horizontally aligned. They&rsquo;re also closer to each other than to any outer group, like the &ldquo;See All Destinations&rdquo; button.
+          The Napa, Sonoma, and Santa Cruz boxes are equidistant and horizontally aligned. They&rsquo;re closer to each other than to any outer group, like the &ldquo;See All Destinations&rdquo; button.
         </p>
       </div>
       <div class="column-2">
         <p>
-          The third pattern has an important exception. It does not hold true when considering parents with edges, like images, cards, or anything else with an outline or border.
+          The third pattern has an important exception. It does not hold true when considering groups with edges, like images, cards, or anything else with an outline or border.
         </p>
       </div>
       <img src="layout/pinterest.png">
       <div class="column-2">
         <p>
-          Pinterest&rsquo;s card interface is a classic example. Because there are edges on nearly everything, the third pattern is invalid. Groups with edges have patterns too though:
+          Pinterest is a classic example. Since the pins have edges, the spacing inside the pins has no specific relation to the spacing outside the pins. Groups with edges follow another pattern:
         </p>
       </div>
     </div>
@@ -121,7 +131,7 @@
       <img src="layout/airbnb-layer4.png">
       <div class="column-2">
         <p> 
-          In a group with edges, like the Napa box, padding matters. In a group without edges, like the &ldquo;Just for the weekend&rdquo; content group, padding is irrelevant.
+          In a group with edges, like the Napa box, padding matters. In a group without edges, like the &ldquo;Just for the weekend&rdquo; content group, padding is invisible and irrelevant.
         </p>
       </div>
       <img src="layout/airbnb-layer-all.png">
@@ -178,19 +188,19 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-           Admittedly, these tweaks are small improvements. You have to remember these are apps designed and built by massive teams funded with millions of dollars. If even they are susceptible to a few errors, just how many errors are individual designers susceptible to? Let&rsquo;s conclude by applying these concepts to a smaller scale app.
+           Admittedly, these tweaks are small improvements, but you have to remember these are apps designed and built by massive teams funded with millions of dollars. If even they are susceptible to a few errors, just how many errors are individual designers susceptible to? Let&rsquo;s conclude by applying these concepts in a less polished app.
         </p>
       </div>
       <img src="layout/final-wrong.png">
       <div class="column-2">
         <p> 
-           This is an existing website that crowdfunds projects for the Berkeley school district. The design of the app doesn&rsquo;t follow group hierarchy at all. I've outlined some flaws.
+           This is a website that crowdfunds projects for the Berkeley public school district. The design of the app doesn&rsquo;t follow group hierarchy at all. I've outlined some flaws.
         </p>
       </div>
       <img src="layout/final-right.png">
       <div class="column-2">
         <p> 
-           Even with no changes in typography, color, or the overall layout, organizing elements into groups and applying group hierarchy principles makes a huge difference.
+           Even with no changes in typography, color, or the overall layout, organizing elements into groups and applying group patterns makes a huge difference.
         </p>
       </div>
     </div>
@@ -205,7 +215,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-           To conclude, there are four patterns of group hierarchy:
+           In summary, there are four patterns of group hierarchy:
         </p>
         <p class="point"> 
            - All groups in the same layer should be equidistant.
@@ -214,7 +224,7 @@
            - All groups in the same layer should be aligned.
         </p>
         <p class="point"> 
-           - A group inside a group without edges should have less spacing than its parent.
+           - An inner layer should have less spacing than an outer layer.
         </p>
         <p class="point bottom-point"> 
            - A group with edges should have consistent padding.
