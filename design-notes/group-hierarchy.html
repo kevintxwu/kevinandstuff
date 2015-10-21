@@ -41,7 +41,7 @@
       <img src="layout/airbnb-layer1.png">
       <div class="column-2">
         <p> 
-          While we organize this page into nested groups, let&rsquo;s also talk about why this organization is even important. There are a few general patterns useful to almost all layouts:
+          While we organize this page into nested groups, let&rsquo;s also talk about why this organization is important. There are a few very useful group patterns:
         </p>
       </div>
     </div>
@@ -70,23 +70,23 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          But the first layer by itself is a relatively simple example. Let&rsquo;s continue by considering a second layer of groups nested within the &ldquo;Just for the weekend&rdquo; content group.
+          But the first layer by itself is relatively simple. Let&rsquo;s continue by considering a second layer of groups nested inside the &ldquo;Just for the weekend&rdquo; content group.
         </p>
       </div>
       <img src="layout/airbnb-layer2.png">
       <div class="column-2">
         <p> 
-          In the second layer, between only two groups, the spacing is obviously equal. However, the spacing between these two inner groups is noticeably smaller than the spacing between the outer groups. This brings us to our third pattern:
+          In the second layer, between only two groups, spacing is obviously equal. However, the spacing in between these second layer groups is noticeably smaller than the spacing in between the first layer groups. This brings us to our third pattern:
         </p>
       </div>
     </div>
     <div class="section-content no-padding-top">
-      <h2> An inner layer tends to have less spacing than an outer layer </h2>
+      <h2> A group inside a group without edges should have less spacing than its parent </h2>
     </div>
     <div class="section-content no-padding-top">
       <div class="column-2">
-        <p> 
-          As you design in deeper layers, spacing between groups often gets smaller and smaller. This is because the closer elements are, the more related they seem to be.
+        <p>
+          Let parents refer to the outer groups and children refer to the inner groups. Children should be closer to each other than to their parents (ha ha). This is because the closer elements are the more related they are implied to be.
         </p>
       </div>
       <img src="layout/airbnb-layer3.png">
@@ -97,7 +97,13 @@
       </div>
       <div class="column-2">
         <p>
-          The third pattern has many exceptions. In a layer where groups have little to no padding this doesn&rsquo;t mean every deeper layer must also have little to no padding. As with any mere pattern, personal judgement is necessary. Finally, we have one last pattern:
+          The third pattern has an important exception. It does not hold true when considering parents with edges, like images, cards, or anything else with an outline or border.
+        </p>
+      </div>
+      <img src="layout/pinterest.png">
+      <div class="column-2">
+        <p>
+          Pinterest&rsquo;s card interface is a classic example. Because there are edges on nearly everything, the third pattern is invalid. Groups with edges have patterns too though:
         </p>
       </div>
     </div>
@@ -107,7 +113,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-          A group with edges refers to elements like images, cards, or anything with an outline. Padding refers to the space around the groups within a layer group.
+          Padding refers to the space around all inner elements inside a group. Groups with edges should have equal top and bottom padding and equal left and right padding.
         </p>
       </div>
     </div>
@@ -151,7 +157,7 @@
       </div>
       <div class="column-2">
         <p> 
-           The second image is the Google Plus app. The top of the profile image and the top of the comment title should be aligned when organized in group hierarchy. A nice side effect of realigning the title of the comments is extra breathing room between the tightly jammed comment title and body. The third pattern is helpful here: the inner spacing between each line in the comment body itself should be no larger than the outer spacing between the comment title and body. Let&rsquo;s see these changes in action:
+           The second image is the Google Plus app. By group hierarchy, the top of the profile image and the top of the comment title should be aligned. A nice side effect of realigning the title of the comments is extra breathing room between the tightly jammed comment title and body. The third pattern is helpful here: the inner spacing between each line in the comment body itself should be no larger than the outer spacing between the comment title and body. Let&rsquo;s see these changes in action:
         </p>
       </div>
     </div>
@@ -172,7 +178,7 @@
     <div class="section-content no-padding-top">
       <div class="column-2">
         <p> 
-           Admittedly these tweaks are small improvements. You have to remember these are apps designed and built by massive teams funded with millions of dollars. If even they are susceptible to a few errors, albeit mostly insignificant, just how many errors are individual designers susceptibile to? These errors are clearly easy to overlook, but I propose group hierarchy is a good way to avoid them.
+           Admittedly these tweaks are small improvements. You have to remember these are apps designed and built by massive teams funded with millions of dollars. If even they are susceptible to a few errors, just how many errors are individual designers susceptibile to? These errors are easy to overlook but group hierarchy is a way to avoid them.
         </p>
       </div>
       <div class="column-2">
@@ -186,13 +192,13 @@
            - All groups in the same layer should be aligned.
         </p>
         <p class="point"> 
-           - An inner layer tends to have less spacing than an outer layer.
+           - A group inside a group without edges should have less spacing than its parent.
         </p>
         <p class="point bottom-point"> 
            - A group with edges should have consistent padding.
         </p>
         <p> 
-           While we naturally tend to follow these patterns, if we deliberately follow them, it&rsquo;s much easier to maintain a clean layout.
+           While we naturally tend to follow these patterns, if we deliberately follow them, it&rsquo;s much easier to create clean layouts.
         </p>
       </div>
     </div>
