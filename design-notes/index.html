@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta property="og:url" content="http://www.kevinandstuff.com/design-smell"/>
+<meta property="og:title" content="Design Notes"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="A set of personal design notes focused on analyzing methods and examples."/>
+<meta property="og:image" content="http://www.kevinandstuff.com/design-smell-screen.png"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="design-notes.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="smell.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<title> Kevin's Design Notes </title>
+</head>
+<body>
+  <div class="content">
+<!--     <a href="../design-notes">
+      <i class="fa fa-arrow-left back"></i>
+    </a> -->
+    <h1 class="title"> Design Notes </h1>
+    <p class="title-text"> A set of personal design notes written with an engineer&rsquo;s mindset. This is a practical collection&#8212;focused on explaining design in formulaic constraints, as precisely as possible. </p>
+  </div>
+  <div class="content sections">
+    <div class="border top-border"></div>
+    <div class="section-content">
+      <h2> Index </h2>
+    </div>
+    <div class="section-content no-padding-top">
+      <div class="note">
+        <p> At this point in time, there are very few notes. Please pardon the dust or some other metaphor for something being under construction while I add to this collection. If you're ever wondering when I'll release the next note, I update these notes along with my personal site on GitHub. Please feel free to <a href="https://github.com/kevintxwu/kevinandstuff" target="_blank">check in</a> at any time to see my progress! </p>
+      </div>
+      <div class="column">
+        <a href="group-hierarchy"> Group Hierarchy </a>
+      </div>
+      <div class="column-2">
+        <p> 
+          Organizing elements so that proper spacing and alignment is easy.
+        </p>
+      </div>
+      <div class="column">
+        <a href="quotes"> Quotes </a>
+      </div>
+      <div class="column-2">
+        <p> 
+          A side note on design philosophy based on a selection of quotes.
+        </p>
+      </div>
+    </div>
+    <div class="border bottom-border"></div>
+  </div>
+  <div class="content footer">
+    <p> Written by some random kid called <a href="http://www.kevinandstuff.com/" target="_blank">Kevin Wu</a>. </p>
+  </div>
+</body>
+<script>
+function reveal(element, section) {
+  $(element).toggleClass("active");
+  $("#" + section).slideToggle();
+}
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55826148-1', 'auto');
+ga('send', 'pageview');
+</script>
+</html>

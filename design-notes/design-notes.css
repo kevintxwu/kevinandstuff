@@ -162,6 +162,7 @@ p {
   float: left;
   width: 1000px;
   box-sizing: border-box;
+  margin-top: 20px;
   padding: 25px 35px;
   border: 1px solid #eee;
   height: 100%;
@@ -208,6 +209,24 @@ img.placeholder {
 
 .bottom-point {
   padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .column {
+    width: 333.33px;
+  }
+
+  .column-1half {
+    width: 500px;
+  }
+
+  .column-1half img {
+    margin-bottom: 0;
+  }
+
+  .column-2 {
+    width: 666.66px;
+  }
 }
 
 @media (max-width: 700px) {
