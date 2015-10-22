@@ -177,7 +177,16 @@ p {
   text-decoration: none;
 }
 
-.back:hover {
+.up {
+  float: right;
+  position: relative;
+  font-size: 20px;
+  color: #111;
+  top: -24px;
+  text-decoration: none;
+}
+
+.back:hover, .up:hover {
   color: #3285ff;
 }
 
