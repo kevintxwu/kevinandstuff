@@ -169,6 +169,14 @@ p {
   margin-bottom: 40px;
 }
 
+.refresh {
+  float: left;
+  display: block;
+  font-size: 22px;
+  color: #111;
+  text-decoration: none;
+}
+
 .back {
   float: left;
   display: block;
