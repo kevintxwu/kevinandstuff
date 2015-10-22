@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta property="og:url" content="http://www.kevinandstuff.com/design-smell"/>
-<meta property="og:title" content="Design Notes"/>
+<meta property="og:url" content="http://www.kevinandstuff.com"/>
+<meta property="og:title" content="Kevin's Design Notes: Group Hierarchy"/>
 <meta property="og:type" content="website"/>
-<meta property="og:description" content="A set of personal design notes focused on analyzing methods and examples."/>
+<meta property="og:description" content="Organizing elements so that proper spacing and alignment is easy."/>
 <meta property="og:image" content="http://www.kevinandstuff.com/design-smell-screen.png"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="design-notes.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="smell.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-<title> Kevin's Design Notes </title>
+<title> Kevin's Design Notes: Group Hierarchy </title>
 </head>
 <body>
   <div class="content">
@@ -42,13 +42,13 @@
           The elements of a layout should be organized in a hierarchy of nested groups. The fastest way to demonstrate this is an example:
         </p>
       </div>
-      <img src="layout/airbnb.png">
+      <img src="layout/airbnb.png" alt="airbnb">
       <div class="column-2">
         <p> 
           Consider <a href="https://www.airbnb.com/" target="_blank">Airbnb</a>&rsquo;s website above. This layout is made up of many groups nested within each other. The first layer of groups contains a few large groups of content and a button.
         </p>
       </div>
-      <img src="layout/airbnb-layer1.png">
+      <img src="layout/airbnb-layer1.png" alt="layer 1">
       <div class="column-2">
         <p> 
           While we organize this page into layers of groups, let&rsquo;s talk about why this organization is important: because it leads us to a set of very useful group patterns:
@@ -64,7 +64,7 @@
           Each of these groups in each layer of the page must be evenly-spaced from each other. We can see this in action in the first layer below.
         </p>
       </div>
-      <img src="layout/airbnb-layer1-spacing.png">
+      <img src="layout/airbnb-layer1-spacing.png" alt="airbnb spacing">
     </div>
     <div class="section-content no-padding-top">
       <h2> All groups in the same layer should be aligned </h2>
@@ -75,7 +75,7 @@
           While whether the groups are center, left, or right aligned is up to personal judgement, if the groups are in the same layer, they must all be aligned the same way.
         </p>
       </div>
-      <img src="layout/airbnb-layer1-alignment.png">
+      <img src="layout/airbnb-layer1-alignment.png" alt="airbnb alignment">
     </div>
     <div class="section-content no-padding-top">
       <div class="column-2">
@@ -83,7 +83,7 @@
           The first layer alone is relatively simple, but let&rsquo;s continue by considering the second layer of groups nested inside the &ldquo;Just for the weekend&rdquo; content.
         </p>
       </div>
-      <img src="layout/airbnb-layer2.png">
+      <img src="layout/airbnb-layer2.png" alt="layer 2">
       <div class="column-2">
         <p> 
           In the second layer, between only two groups, spacing is obviously equal. However, the spacing between these second layer groups is noticeably smaller than the spacing between the first layer groups. This brings us to our third pattern:
@@ -99,7 +99,7 @@
           Margins refer to the spacing between groups inside a layer. Groups inside inner layers have smaller margins to imply that they are more closely related.
         </p>
       </div>
-      <img src="layout/airbnb-layer3.png">
+      <img src="layout/airbnb-layer3.png" alt="layer 3">
       <div class="column-2">
         <p> 
           The Napa, Sonoma, and Santa Cruz boxes are equidistant and horizontally aligned. They&rsquo;re closer to each other than to any outer group, like the &ldquo;See All Destinations&rdquo; button.
@@ -110,7 +110,7 @@
           The third pattern has an important exception. It doesn&rsquo;t hold true when considering groups with edges, such as images, cards, or anything else with a border.
         </p>
       </div>
-      <img src="layout/pinterest.png">
+      <img src="layout/pinterest.png" alt="pinterest">
       <div class="column-2">
         <p>
           Pinterest is a classic example. Since the pins have borders, the margins inside the pins have no relation to the margins outside the pins. Groups with edges follow a different pattern:
@@ -128,13 +128,13 @@
       </div>
     </div>
     <div class="section-content no-padding-top">
-      <img src="layout/airbnb-layer4.png">
+      <img src="layout/airbnb-layer4.png" alt="layer 4">
       <div class="column-2">
         <p> 
           In a group with edges, like the Napa box, padding matters. In a group without edges, like the overall &ldquo;Just for the weekend&rdquo; content, padding is invisible and thus irrelevant.
         </p>
       </div>
-      <img src="layout/airbnb-layer-all.png">
+      <img src="layout/airbnb-layer-all.png" alt="airbnb diagram">
       <div class="column-2">
         <p> 
           The essential idea is to learn to see imaginary lines like those above. Layouts are not a set of single elements, but a hierarchy of nested groups. Now, you may be thinking: 
@@ -153,10 +153,10 @@
     </div>
     <div class="section-content no-padding-top">
       <div class="column-1half">
-        <img src="layout/etsy.png">
+        <img src="layout/etsy.png" alt="etsy diagram">
       </div>
       <div class="column-1half">
-        <img src="layout/google-plus.png">
+        <img src="layout/google-plus.png" alt="google plus diagram">
       </div>
     </div>
     <div class="section-content no-padding-top">
@@ -206,10 +206,10 @@
     </div>
     <div class="section-content no-padding-top">
       <div class="column-1half">
-        <img src="layout/bpsf-original.png">
+        <img src="layout/bpsf-original.png" alt="bpsf">
       </div>
       <div class="column-1half">
-        <img src="layout/bpsf-fixed.png">
+        <img src="layout/bpsf-fixed.png" alt="bpsf fixed">
       </div>
     </div>
     <div class="section-content no-padding-top">
