@@ -194,7 +194,7 @@ p {
   text-decoration: none;
 }
 
-.back:hover, .up:hover {
+.back:hover, .up:hover, .refresh:hover {
   color: #3285ff;
 }
 
