@@ -1,6 +1,6 @@
 html {
   overflow-x: hidden;
-/*  -webkit-font-smoothing: antialiased !important;*/
+  -webkit-font-smoothing: antialiased !important;
 }
 
 body, html {
@@ -42,8 +42,8 @@ a:hover {
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 9999;
@@ -53,8 +53,8 @@ a:hover {
 
 .white-everything {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
@@ -84,10 +84,34 @@ a:hover {
   z-index: 1;
 }
 
+#bot-circle {
+  position: absolute;
+  bottom: 65px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #111;
+  border-radius: 30px;
+  z-index: 1;
+}
+
 #inner-circle {
   position: absolute;
   top: 95px;
   left: 110px;
+  width: 40px;
+  height: 40px;
+  background: #111;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+}
+
+#bot-inner-circle {
+  position: absolute;
+  bottom: 75px;
+  right: 110px;
   width: 40px;
   height: 40px;
   background: #111;
@@ -106,6 +130,16 @@ a:hover {
   -webkit-transition: 0.5s linear;
 }
 
+.footer-tag {
+  position: absolute;
+  bottom: 65px;
+  right: 170px;
+  opacity: 0;
+  text-align: right;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+}
+
 #circle:hover {
   cursor: pointer;
 }
@@ -118,6 +152,18 @@ a:hover {
   opacity: 1;
 }
 
+#bot-circle:hover {
+  cursor: pointer;
+}
+
+#bot-circle:hover ~ #bot-inner-circle {
+  opacity: 1;
+}
+
+#bot-circle:hover ~ .footer-tag {
+  opacity: 1;
+}
+
 .button-wrapper {
   padding-top: 50px;
 }
@@ -127,12 +173,14 @@ a:hover {
   color: #111;
   font-family: 'museo-sans', sans-serif;
   font-weight: 300;
+  -webkit-font-smoothing: auto;
   font-size: 18px;
-  padding: 10px 20px;
-  margin-right: 15px;
-  border-radius: 100px;
-  border: 2px solid #111;
-  opacity: 0.3;
+  padding: 5px 15px;
+  margin-right: 20px;
+/*  border-radius: 100px;*/
+  outline: 2px solid #111;
+  border: 4px solid #fff;
+/*  opacity: 0.3;*/
   display: inline-block;
   margin-top: 0;
   margin-bottom: 25px;
@@ -141,7 +189,8 @@ a:hover {
 }
 
 .button:hover {
-  opacity: 1;
+  background: #111;
+  color: #fff;
 }
 
 .wrapper {
@@ -169,7 +218,7 @@ a:hover {
 
 #header-adjust {
   margin-top: 190px;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
   padding: 0 100px 0 100px;
 }
 
@@ -257,6 +306,12 @@ a:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  .work-cover {
+    padding: 150px 35px;
+  }
+}
+
 @media (max-width: 800px) {
   .work {
     width: 100%;
@@ -268,8 +323,12 @@ a:hover {
 }
 
 #footer {
+  position: relative;
   margin: 75px 0 0 0;
   padding-bottom: 70px;
+  padding-right: 250px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #footer a {
@@ -380,6 +439,10 @@ p {
   height: 70px;
 }
 
+.footer-link-wrapper.float-right {
+  margin-right: -10px;
+}
+
 .footer-link {
   display: block;
   position: relative;
@@ -421,6 +484,15 @@ p {
   float: right;
 }
 
+.text-right {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.kinda-mobile {
+  display: none;
+}
+
 .mobile {
   display: none;
 }
@@ -456,6 +528,16 @@ p {
   }
 }
 
+@media (max-width: 950px) {
+  .kinda-mobile {
+    display: inline-block;
+  }
+
+  #bot-circle, #bot-inner-circle {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   body, html {
     min-width: 0;
@@ -465,8 +547,9 @@ p {
     opacity: 0;
   }
 
-  .button {
-    opacity: 1;
+  .button:hover {
+    background: transparent;
+    color: #111;
   }
 
   .se-pre-con {
@@ -479,11 +562,15 @@ p {
     left: 25px;
   }
 
-  #inner-circle {
+  #inner-circle, #bot-inner-circle {
     display: none;
   }
 
   .home-text {
+    display: none;
+  }
+
+  .footer-tag {
     display: none;
   }
 
@@ -580,5 +667,9 @@ p {
 
   .mobile-space {
     margin-bottom: 50px;
+  }
+
+  .footer-link-wrapper.float-right {
+    margin-right: 0;
   }
 }
