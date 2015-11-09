@@ -528,6 +528,12 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #bot-inner-circle, .footer-tag {
+    display: none;
+  }
+}
+
 @media (max-width: 950px) {
   .kinda-mobile {
     display: inline-block;
