@@ -1,6 +1,6 @@
 html {
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased !important;
+/*  -webkit-font-smoothing: antialiased !important;*/
 }
 
 body, html {
@@ -310,6 +310,7 @@ h2 {
   line-height: 26px;
   font-weight: 300;
   color: #444;
+  font-family: "calluna", serif;
   max-width: 500px;
 }
 
@@ -331,6 +332,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   color: #444;
+  font-family: "calluna", serif;
   line-height: 32px;
 }
 
