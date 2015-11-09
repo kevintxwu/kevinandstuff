@@ -308,7 +308,7 @@ h1 {
 h2 {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 300;
+  font-weight: 400;
   color: #444;
   font-family: "Lora", serif;
   max-width: 500px;
@@ -330,7 +330,7 @@ p {
   width: 600px;
   padding: 50px 400px 50px 0;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: #444;
   font-family: "Lora", serif;
   line-height: 32px;
