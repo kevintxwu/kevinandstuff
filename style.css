@@ -549,6 +549,10 @@ p {
     width: 100%;
   }
 
+  .mini {
+    width: 50%;
+  }
+
   .content {
     width: 100%;
     box-sizing: border-box;
