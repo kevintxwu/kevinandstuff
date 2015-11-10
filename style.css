@@ -583,6 +583,10 @@ p {
   .footer-link-wrapper.float-right {
     margin-right: 0;
   }
+
+  #footer {
+    padding-right: 100px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -684,5 +688,9 @@ p {
     display: block;
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  #footer {
+    padding-right: 25px;
   }
 }
