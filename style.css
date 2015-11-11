@@ -502,6 +502,7 @@ p {
 }
 
 .text-link {
+  text-decoration: underline;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
 }
@@ -541,6 +542,11 @@ p {
 
   #bot-circle, #bot-inner-circle {
     display: none;
+  }
+
+  .footer-section {
+    display: inline-block;
+    margin-bottom: 15px;
   }
 }
 
@@ -686,12 +692,6 @@ p {
   .footer-text {
     margin: 0 0 25px 0;
     width: auto;
-  }
-
-  .footer-section {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
   }
 
   #footer {
