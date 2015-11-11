@@ -503,9 +503,8 @@ p {
   p {
     width: 100%;
     max-width: 600px;
-    padding: 25px 110px 25px 0;
+    padding: 25px 400px 25px 0;
   }
-
 
   .content {
     box-sizing: border-box;
