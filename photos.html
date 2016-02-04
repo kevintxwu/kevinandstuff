@@ -13,6 +13,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <link href="src/css/lightbox.css" rel="stylesheet">
   <title> Kevin Wu: Photos </title>
 </head>
 <body>
@@ -23,18 +24,18 @@
       <div id="title">Photography</div>
       <div id="subtitle">The Less Shitty Ones</div>
       <div class="divider"></div>
-      <h2> Behold!!! My least shitty photos!!! </h2>
+      <h2> BBehold! My least shitty photos! I only recently started photography so all of these photos may or may not be from the same trip around Asia. </h2>
     </div>
   </div>
   <div class="wrapper photos">
     <div class="column">
-      <img src="portfolio/DSC_8672.jpg">
-      <img src="portfolio/DSC_7798.jpg">
-      <img id="adjust" src="portfolio/DSC_7323.jpg">
+      <a href="portfolio/DSC_8672.jpg" data-lightbox="image-1"><img src="portfolio/DSC_8672.jpg"></a>
+      <a href="portfolio/DSC_7798.jpg" data-lightbox="image-1"><img src="portfolio/DSC_7798.jpg"></a>
+      <a href="portfolio/DSC_7323.jpg" data-lightbox="image-1"><img id="adjust" src="portfolio/DSC_7323.jpg"></a>
     </div><div class="column">
-      <img src="portfolio/DSC_7363.jpg">
-      <img src="portfolio/DSC_7432.jpg">
-      <img src="portfolio/DSC_9089.jpg">
+      <a href="portfolio/DSC_7363.jpg" data-lightbox="image-1"><img src="portfolio/DSC_7363.jpg"></a>
+      <a href="portfolio/DSC_7432.jpg" data-lightbox="image-1"><img src="portfolio/DSC_7432.jpg"></a>
+      <a href="portfolio/DSC_9089.jpg" data-lightbox="image-1"><img src="portfolio/DSC_9089.jpg"></a>
     </div>
   </div>
   <div class="wrapper">
@@ -77,6 +78,7 @@
 </body>
 <div class="se-pre-con"></div>
 <div class="white-everything"></div>
+<script src="src/js/lightbox.js"></script>
 <script>
 $(window).load(function() {
   // Animate loader off screen
