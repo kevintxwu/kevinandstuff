@@ -116,13 +116,18 @@ a:hover {
   vertical-align: top;
 }
 
-.column img, .column a {
+.column img {
   max-width: 100%;
-  opacity: 0.8;
   display: block;
 }
 
-.column img:hover, .column a:hover {
+.column a {
+  max-width: 100%;
+  opacity: 0.85;
+  display: block;
+}
+
+.column a:hover {
   opacity: 1;
   cursor: pointer;
   transition: 0.2s linear;
