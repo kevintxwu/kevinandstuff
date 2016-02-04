@@ -544,6 +544,10 @@ p {
 }
 
 @media (max-width: 950px) {
+  .photos .column {
+    max-width: 100%;
+  }
+  
   .kinda-mobile {
     display: inline-block;
   }
