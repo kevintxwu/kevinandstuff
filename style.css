@@ -119,6 +119,9 @@ a:hover {
 .column img {
   max-width: 100%;
   display: block;
+  -ms-transform: scale(1.001, 1.001);
+  -webkit-transform: scale(1.001, 1.001);
+  transform: scale(1.001, 1.001);
 }
 
 .column a {
