@@ -158,14 +158,13 @@ img {
 .thing {
   display: block;
   float: left;
-  width: 440px;
-  height: 275px;
+  max-width: 440px;
 }
 
 .text {
   display: block;
   float: left;
-  width: 580px;
+  max-width: 580px;
   padding-left: 50px;
 }
 
@@ -210,6 +209,10 @@ img {
     width: auto;
     max-width: 530px;
     padding: 0;
+  }
+
+  .thing {
+    max-width: 100%;
   }
 }
 
