@@ -1,0 +1,72 @@
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <title>Kevin Wu — Yelp</title>
+</head>
+<body>
+  <div class="spacer-6"></div>
+  <h1>Yelp</h1>
+  <div class="spacer-1"></div>
+  <h2 class="h2-yelp">A summer in product management making data-driven product decisions.</h2>
+  <div class="spacer-5"></div>
+  <div class="note">
+    <h3>Position</h3>
+    <div class="spacer-1"></div>
+    <p>Product Manager Intern</p>
+    <div class="spacer-2"></div>
+    <h3>Team</h3>
+    <div class="spacer-1"></div>
+    <p>Contributions</p>
+  </div>
+  <div class="text">
+    <p>At Yelp, the Contributions Team handles the millions of reviews, photos, tips, and other content submitted by users daily. These contributions are the core value proposition of Yelp, and their quality and frequency is essential to the company&rsquo;s success.</p>
+    <div class="spacer-1"></div>
+    <p>In the summer of 2016, I worked as a Product Manager Intern on the Contributions Team. I worked with upper management to get approval on my proposals, with design (specifically the wonderful and talented <a href="http://gabrianna.us/" target="_blank">Gabrianna Dumaguin</a>) to create a beautiful UI, and with engineering and data science to run experiments.</p>
+    <div class="spacer-1"></div>
+    <p> The two main features that I focused on over the summer were <a onclick="$('html, body').animate({scrollTop: $('#review-splash').offset().top - 50}, 500, 'swing');">Review Splash</a> and <a onclick="$('html, body').animate({scrollTop: $('#ynra').offset().top - 50}, 500, 'swing');">YNRA Everywhere</a>. In total, the preliminary results of my features resulted in an 8.7% increase in review rate over cohorts constituting 20% of the existing user base.</p>
+    <div class="spacer-2"></div>
+    <h3 id="review-splash">Review Splash</h3>
+    <div class="spacer-1"></div>
+    <p>The Review Splash is a review prompt that Yelp can show users right when they start the mobile app. The goal was to increase mobile review rate through prompting users that had recently been active to encourage them to contribute content.</p>
+  </div>
+  <div class="spacer-2"></div>
+  <img src="yelp-img/review-splash.jpg">
+  <div class="spacer-2"></div>
+  <div class="note"></div>
+  <div class="text">
+    <p>Whenever a user takes an action (Check-Ins, Orders, Photos, or Tips) that user is susceptible to a review pitch some time after. By segmenting metrics based off of a user&rsquo;s attributes and the type of actions they took, I developed non-intrusive rate limits and backoff logic that is tailored to specific user types.</p>
+    <div class="spacer-1"></div>
+    <p>In other words, I figured out how to pitch people for as much of a review rate increase as possible without annoying or bothering them. I developed a specific algorithm that maximizes both review rate and user retention.</p>
+    <div class="spacer-2"></div>
+    <h3 id="ynra">YNRA Everywhere</h3>
+    <div class="spacer-1"></div>
+    <p>Currently, the Yelp mobile app does not prompt users to start reviews in as many places or ways as it could. YNRA Everywhere is essentially an idea to place YNRA (Your Next Review Awaits) units on the Nearby, Activity Feed, and More pages to increase visibility while tracking counter metrics to ensure the units are not detracting from other Yelp features. </p>
+  </div>
+  <div class="spacer-2"></div>
+  <img src="yelp-img/ynra.jpg">
+  <div class="spacer-2"></div>
+  <div class="note"></div>
+  <div class="text">
+    <p>In terms of the gain in visibility, these screens collectively have 30 times the weekly screen views that mobile YNRA units currently have. Even though the historical conversion rate of YNRA to saved reviews is extremely low, the massive gain in visibility can still yield around thousands of reviews weekly.</p>
+    <div class="spacer-2"></div>
+    <h3>Other Work</h3>
+    <div class="spacer-1"></div>
+    <p>In the rest of my time at Yelp, I did research on topics ranging from attributes in reviews correlated with their quality to new tactics for increasing category-specific content. When looking for data for user research and feature proposals, I largely utilized <a href="https://www.splunk.com/" target="_blank">Splunk</a> and <a href="http://www.sql-workbench.net/" target="_blank">SQL Workbench</a>.</p>
+  </div>
+  <div class="spacer-2"></div>
+  <img src="yelp-img/mascot.png">
+  <div class="spacer-1"></div>
+  <img src="yelp-img/stickers.png">
+  <div class="spacer-2"></div>
+  <div class="note"></div>
+  <div class="text">
+    <p>I also found the time to help my team come up with a mascot — the industrious bee. It&rsquo;s both a pun on our team&rsquo;s abbreviated name (CTB) and a symbol of the power of contributing. Along the way, I even illustrated a sticker set for not only our mascot, but also other teams&rsquo; mascots.</p>
+    <div class="spacer-1"></div>
+    <p>Overall, I loved my summer at Yelp. I got a chance to help my team on the fun side of things as well as the business side. After being immersed for eleven weeks in a company with established product theses, I feel better equipped to handle any product decision in the future with data in mind.</p>
+  </div>
+  <p><a class="back" href="..">&#10510; Back to Home</a></p>
+  <div class="spacer-5"></div>
+</body>
+</html>
