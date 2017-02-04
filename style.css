@@ -76,6 +76,15 @@ body {
   background: rgba(255, 255, 0, 0.5);
 }
 
+.hero {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  opacity: 0.3;
+}
+
 h1 {
   font-family: 'FreightDisplaySemiBoldItalic', serif;
   font-size: 48px;
@@ -115,7 +124,7 @@ img {
   max-width: 100%;
 }
 
-.spacer-1, .spacer-2, .spacer-3, .spacer-4, .spacer-5, .spacer-6 {
+.spacer-1, .spacer-2, .spacer-3, .spacer-4, .spacer-5, .spacer-6, .spacer-7, .spacer-8 {
   clear: both;
 }
 
@@ -141,6 +150,14 @@ img {
 
 .spacer-6 {
   height: 150px;
+}
+
+.spacer-7 {
+  height: 175px;
+}
+
+.spacer-8 {
+  height: 200px;
 }
 
 .h2-home {
