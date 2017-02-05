@@ -81,8 +81,8 @@ body {
   z-index: -2;
   top: 0;
   left: 0;
-  max-width: 100%;
-  opacity: 0.3;
+  width: 100%;
+  opacity: 0.4;
 }
 
 h1 {
