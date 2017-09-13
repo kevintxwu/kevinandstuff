@@ -76,15 +76,6 @@ body {
   background: rgba(255, 255, 0, 0.5);
 }
 
-.hero {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.4;
-}
-
 h1 {
   font-family: 'FreightDisplaySemiBoldItalic', serif;
   font-size: 48px;
@@ -158,10 +149,6 @@ img {
 
 .spacer-8 {
   height: 200px;
-}
-
-.h2-home {
-  max-width: 440px;
 }
 
 .h2-unboard {
