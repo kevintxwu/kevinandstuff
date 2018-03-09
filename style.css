@@ -196,6 +196,16 @@ img {
   display: none;
 }
 
+.media-link {
+  display: inline-block;
+  width: 350px;
+  padding: 40px 0 10px;
+}
+
+.media-link-left {
+  width: 300px;
+}
+
 @media (max-width: 1199px) {
   body {
     padding: 0 100px;
